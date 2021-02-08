@@ -4,7 +4,7 @@
     <li>Crie uma pasta com o nome trybe-exercises para manter todos os exercícios que desenvolverá ao longo do curso. Já dentro dessa pasta, crie uma outra pasta com o nome exercises e dentro dela uma última pasta com o nome 2.1 </li>
     <li>Para podermos simular um exercício feito, você criará um arquivo .txt com um nome de sua escolha (Exemplo: trybe-skills.txt ) e utilizará o seguinte <a href="trybe-skills.txt">conteúdo</a>.</li>
     <li>Transforme a pasta trybe-exercises em um repositório git</li>
-    <li>Em trybe-exercises crie um arquivo de README utilizando o comando touch README.md</li>
+    <li>Em trybe-exercises crie um arquivo de README utilizando o comando `touch README.md`</li>
     <li>Crie um commit inicial</li>
     <li>Vá até o seu GitHub e crie um repositório público e dê ao repositório um nome descritivo, como por exemplo trybe-exercises</li>
     <li>Clique no botão SSH e então copie a URL do repositório</li>
