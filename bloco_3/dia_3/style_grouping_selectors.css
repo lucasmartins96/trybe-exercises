@@ -5,3 +5,7 @@ h1, p {
 ol:hover {
     background-color: darkgrey;
 }
+
+li:active {
+    font-family: fantasy;
+}
