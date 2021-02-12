@@ -6,6 +6,10 @@ ol:hover {
     background-color: darkgrey;
 }
 
-li:active {
+ol li:active {
     font-family: fantasy;
+}
+
+li {
+    list-style-type: none;
 }
