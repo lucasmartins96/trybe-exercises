@@ -14,12 +14,23 @@ img {
 
 .baloon {
     position: absolute;
-    z-index: 1;
+    z-index: 2;
+    top: 310px;
+    left: 220px;
+    
 }
 
 .word {
     position: absolute;
-    z-index: 2;
-    top: 95px;
+    z-index: 3;
+    top: 330px;
+    left: 225px;
     font-size: 14px;
+}
+
+.bowser {
+    position: absolute;
+    z-index: 1;
+    top: 320px;
+    left: 350px;
 }
