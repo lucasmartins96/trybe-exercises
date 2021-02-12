@@ -1,3 +1,13 @@
 img {
     width: 150px;
 }
+
+.super-mario {
+    position: absolute;
+    top: 80px;  
+}
+
+.goomba {
+    position: absolute;
+    top: 320px;
+}
