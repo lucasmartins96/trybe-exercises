@@ -1,0 +1,41 @@
+body {
+    font-size: 16px;
+}
+
+h1 {
+    font-size: 65px;
+    font-family: sans-serif;
+    color: orange;
+    text-align: center;
+}
+
+ul {
+    background-color: deepskyblue;
+}
+
+li {
+    line-height: 50px;
+}
+
+p {
+    font-weight: 600;
+    font-size: 3em;
+    font-style: oblique;
+    text-decoration: underline;
+}
+
+.mod {
+    background-color: khaki;
+}
+
+.bg-yellow {
+    background-color: yellow;
+}
+
+.bg-red {
+    background-color: red;
+}
+
+.bg-brown {
+    background-color: saddlebrown;
+}
