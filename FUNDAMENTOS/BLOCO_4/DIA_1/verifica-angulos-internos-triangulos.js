@@ -1,10 +1,10 @@
-let anguloVerticeA = 20;
-let anguloVerticeB = 90;
-let anguloVerticeC = 60;
-let somaAngulosInternos = anguloVerticeA+anguloVerticeB+anguloVerticeC;
+let anguloInternoVerticeA = 20;
+let anguloInternoVerticeB = 90;
+let anguloInternoVerticeC = 60;
+let somaAngulosInternos = anguloInternoVerticeA+anguloInternoVerticeB+anguloInternoVerticeC;
 
 if (somaAngulosInternos === 180) {
-  console.log('Os ângulos dos triângulos estão corretos!');
+  console.log('Os ângulos internos dos triângulos estão corretos!');
 } else {
-  console.log('Os ângulos dos triângulos estão incorretos!');
+  console.log('Os ângulos internos dos triângulos estão incorretos!');
 }
