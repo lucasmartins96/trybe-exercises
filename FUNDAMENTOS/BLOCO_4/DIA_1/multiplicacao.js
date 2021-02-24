@@ -1,5 +1,5 @@
 let a = 305;
 let b = 20;
-let multiplicao = a*b;
+let multiplicacao = a*b;
 
-console.log('a:'+a+'\nb:'+b+'\nMultiplicação: '+multiplicao);
+console.log('a:'+a+'\nb:'+b+'\nMultiplicação: '+multiplicacao);
