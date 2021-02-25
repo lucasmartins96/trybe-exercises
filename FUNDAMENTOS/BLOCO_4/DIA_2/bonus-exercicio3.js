@@ -10,8 +10,8 @@ let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 let produto = [];
 console.log(numbers);
 
-for (let i = 0; i < numbers.length; i++) {
-  (i!=numbers.length-1) ? produto.push(numbers[i]*numbers[i+1]) : produto.push(numbers[i]*2);
+for (let index = 0; index < numbers.length; index++) {
+  (index!=numbers.length-1) ? produto.push(numbers[index]*numbers[index+1]) : produto.push(numbers[index]*2);
 }
 
 console.log(produto);

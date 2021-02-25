@@ -3,12 +3,12 @@ let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 
 console.log(numbers);
 
-for (let i = 1; i < numbers.length; i++) {
-  for (let j = 0; j < i; j++) {
-    if (numbers[i] > numbers[j]) {
-      let aux = numbers[i];
-      numbers[i] = numbers[j];
-      numbers[j] = aux;
+for (let nextIndex = 1; nextIndex < numbers.length; nextIndex++) {
+  for (let currentIndex = 0; currentIndex < nextIndex; currentIndex++) {
+    if (numbers[nextIndex] > numbers[currentIndex]) {
+      let aux = numbers[nextIndex];
+      numbers[nextIndex] = numbers[currentIndex];
+      numbers[currentIndex] = aux;
     }
   }
 }
