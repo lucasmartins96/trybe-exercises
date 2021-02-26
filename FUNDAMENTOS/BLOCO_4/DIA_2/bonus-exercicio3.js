@@ -11,7 +11,11 @@ let produto = [];
 console.log(numbers);
 
 for (let index = 0; index < numbers.length; index++) {
-  (index!=numbers.length-1) ? produto.push(numbers[index]*numbers[index+1]) : produto.push(numbers[index]*2);
+  if (numbers.indexOf(numbers[index+1]) > -1){
+    produto.push(numbers[index]*numbers[index+1]);
+  } else {
+    produto.push(numbers[index]*2);
+  }
 }
 
 console.log(produto);
