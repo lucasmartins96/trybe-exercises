@@ -1,0 +1,18 @@
+body {
+    margin: 0;
+}
+
+#container {
+    margin: 0 auto;
+    width: 80%;
+    background-color: palegreen;
+    padding: 0 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+nav {
+    text-align: center;
+}
