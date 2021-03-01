@@ -4,7 +4,7 @@
 */
 let triangleBase = 5;
 let asterisks, blanks;
-asterisksLine = '';
+asterisks='';
 
 for (let line = 0; line < triangleBase; line+=1) {
   asterisks += '*';
