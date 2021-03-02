@@ -5,14 +5,14 @@ Valor esperado no retorno da função: Fernanda .
 
 */
 function showMaxLengthName(strArray) {
-  let maxLengthIndex = 0;
+  let maxLengthName = strArray[0];
 
   for (const key in strArray) {
-    if (strArray[maxLengthIndex].length < strArray[key].length){
-      maxLengthIndex = key;
+    if (maxLengthName.length < strArray[key].length){
+      maxLengthName = strArray[key];
     }
   }
-  return strArray[maxLengthIndex];
+  return maxLengthName;
 }
 
 const index = showMaxLengthName(['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana']);
