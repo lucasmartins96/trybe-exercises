@@ -26,7 +26,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [X] 3-2: :white_check_mark: _HTML & CSS - Primeiros passos em CSS_
 - [X] 3-3: :white_check_mark: _HTML & CSS - Seletores e posicionamento_
 - [X] 3-4: :white_check_mark: _HTML Semântico_
-- [X] 3-5: :white_check_mark: _[Projeto - HTML & CSS]()_
+- [X] 3-5: :white_check_mark: _[Projeto - HTML & CSS](https://github.com/tryber/sd-010-b-project-lessons-learned/pull/53)_
 
 ##### Bloco 4: Introdução - JavaScript
 
@@ -34,7 +34,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [X] 4-2: :white_check_mark: _JavaScript - Array e loop For_
 - [X] 4-3: :white_check_mark: _JavaScript - Lógica de Programação e Algoritmos_
 - [X] 4-4: :white_check_mark: _JavaScript - Objetos e funções_
-- [x] 4-5: _[Projeto - Playground Functions]()_
+- [x] 4-5: _[Projeto - Playground Functions](https://github.com/tryber/sd-010-b-project-playground-functions/pull/57)_
 
 ##### Bloco 5: Introdução - JavaScript - Projetos
 
