@@ -61,9 +61,17 @@
           /*4. Crie uma função que corrija o texto da tag <h1>.*/
           document.getElementsByTagName('h1')[0].innerText = 'Exercício 5.1 - JavaScript';
           
-            /*5. Crie uma função que modifique todo o texto da tag <p> para maiúsculo.
-          6. Crie uma função que exiba o conteúdo de todas as tags <p> no console.
-        */
+          /*5. Crie uma função que modifique todo o texto da tag <p> para maiúsculo.*/
+          function capitalizeParagraphs(tagName) {
+            let paragraphs = document.getElementsByTagName(tagName);
+            for (let index = 0; index < paragraphs.length; index += 1) {
+              paragraphs[index].innerText = paragraphs[index].innerHTML.toUpperCase();
+            }
+          }
+          capitalizeParagraphs('p');
+
+          /*6. Crie uma função que exiba o conteúdo de todas as tags <p> no console.*/
+          
     </script>
   </body>
 </html>
