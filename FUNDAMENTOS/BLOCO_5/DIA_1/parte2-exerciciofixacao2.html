@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fixação</title>
+  <style>
+    .paragraph {background-color: cadetblue; font-size: 20px;}
+  </style>
+</head>
+<body>
+  <h1>Título</h1>
+  <h2>Subtítulo</h2>
+  <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore corrupti cupiditate ipsa molestias corporis eum, quia a quidem animi? Assumenda sapiente, odit iusto odio quia perferendis. Recusandae officiis atque sunt?</p>
+  <p class="paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique expedita error commodi minus, cum quas laborum exercitationem a ipsa cupiditate aliquid quam molestiae autem earum distinctio architecto reiciendis fuga cumque.</p>
+
+  <script>
+    let paragraphs = document.getElementsByClassName('paragraph');
+    paragraphs[0].style.fontSize = 'medium';
+    let subtitulo = document.getElementsByTagName('h2');
+    console.log(subtitulo);
+  </script>
+</body>
+</html>
