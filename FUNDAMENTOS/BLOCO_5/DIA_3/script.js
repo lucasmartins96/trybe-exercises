@@ -33,9 +33,17 @@ function insertDaysInCalendar() {
     if (dezDaysList[index] === 25) {
       daysListItem.className = 'day holiday friday';
     }
-    
+
     daysList.appendChild(daysListItem);
   }
 }
 
 insertDaysInCalendar();
+//2 - Criando botão "Feriados"
+function createHolidayButton(dayString) {
+  const btnHoliday = document.createElement('button');
+  btnHoliday.innerText = dayString;
+  btnHoliday.id = 'btn-holiday';
+  document.querySelector('.buttons-container').appendChild(btnHoliday);
+}
+createHolidayButton('Feriados');
