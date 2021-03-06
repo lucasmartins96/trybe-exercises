@@ -70,3 +70,19 @@ function createFridayButton(dayString) {
   document.querySelector('.buttons-container').appendChild(btnFriday);
 }
 createFridayButton('Sexta-feira');
+
+//5 - Adicionando evento no botão sexta-feira
+const arraySaveNumberDay = [];
+function swapTextInFriday() {
+  const arrayFriday = document.getElementsByClassName('friday');
+  for (let index = 0; index < arrayFriday.length; index++) {
+    const arrayFridayItem = arrayFriday[index];
+    if (arrayFridayItem.innerHTML !== 'SEXTOU!') {
+      arraySaveNumberDay.push(arrayFridayItem.innerHTML);
+      arrayFridayItem.innerText = 'SEXTOU!';
+    } 
+    else arrayFridayItem.innerText = arraySaveNumberDay[index];
+  }
+}
+const btnFriday = document.getElementById('btn-friday');
+btnFriday.addEventListener('click', swapTextInFriday);
