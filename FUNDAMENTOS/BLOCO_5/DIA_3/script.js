@@ -140,3 +140,23 @@ function colorDay(elemento) {
 for (let index = 0; index < arrayLiDay.length; index++) {
   arrayLiDay[index].addEventListener('click', colorDay);
 }
+
+//Bônus - adicionando compromissos
+const appointmentsList = document.querySelector('.task-list');
+const appointmentsInput = document.getElementById('task-input');
+function createAppointments() {
+  const appointmentsListItem = document.createElement('li');
+  const inputText = appointmentsInput.value;
+  appointmentsListItem.innerText = inputText;
+  appointmentsList.appendChild(appointmentsListItem);
+}
+const addAppointmentsButton = document.getElementById('btn-add');
+addAppointmentsButton.addEventListener('click', createAppointments);
+
+function captureEnter(elemento) {
+  let enterKey = elemento.keyCode;
+  if (enterKey == 13) createAppointments();
+}
+
+appointmentsInput.addEventListener('keydown', captureEnter);
+
