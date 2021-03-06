@@ -103,3 +103,11 @@ for (let index = 0; index < arrayLiDay.length; index++) {
   arrayLiDay[index].addEventListener('mouseover', dayZoomOn);
   arrayLiDay[index].addEventListener('mouseleave', dayZoomOff); 
 }
+
+//7 - Adicionar tarefas no calendário
+function createTask(nameTask) {
+  const task = document.createElement('span');
+  task.innerText = nameTask;
+  document.querySelector('.my-tasks').appendChild(task);
+}
+createTask('Planejar a semana');
