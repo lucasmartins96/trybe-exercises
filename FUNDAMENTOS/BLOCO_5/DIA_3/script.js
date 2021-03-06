@@ -61,3 +61,12 @@ function updateBackgroundColorHolidays() {
 }
 const btnHoliday = document.getElementById('btn-holiday');
 btnHoliday.addEventListener('click', updateBackgroundColorHolidays);
+
+//4 - Criando o botão Sexta-feira
+function createFridayButton(dayString) {
+  const btnFriday = document.createElement('button');
+  btnFriday.innerText = dayString;
+  btnFriday.id = 'btn-friday';
+  document.querySelector('.buttons-container').appendChild(btnFriday);
+}
+createFridayButton('Sexta-feira');
