@@ -125,15 +125,8 @@ createColorfulCaptionDiv('red');
 const colorfulDiv = document.querySelector('.my-tasks').lastChild;
 function isSelectedDiv() {
   let isSelected = '';
-  if (colorfulDiv.className === 'task') {
-    colorfulDiv.className = 'task selected';
-    isSelected = true;
-  } else {
-    colorfulDiv.className = 'task';
-    isSelected = false;
-  }
-  return isSelected;
+  if (colorfulDiv.className === 'task') colorfulDiv.className = 'task selected';
+  else colorfulDiv.className = 'task';
 }
 colorfulDiv.addEventListener('click', isSelectedDiv);
 
-//10 - Adicionando cor da tarefa no dia
