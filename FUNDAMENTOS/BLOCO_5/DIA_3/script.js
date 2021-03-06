@@ -53,7 +53,7 @@ function updateBackgroundColorHolidays() {
   const arrayHolidays = document.getElementsByClassName('holiday');
   for (let index = 0; index < arrayHolidays.length; index++) {
     if (arrayHolidays[index].style.backgroundColor === 'rgb(238, 238, 238)' || arrayHolidays[index].style.backgroundColor === '') {
-      arrayHolidays[index].style.backgroundColor = 'darkgreen';
+      arrayHolidays[index].style.backgroundColor = 'white';
     } else {
       arrayHolidays[index].style.backgroundColor = 'rgb(238,238,238)';
     }
