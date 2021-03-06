@@ -86,3 +86,20 @@ function swapTextInFriday() {
 }
 const btnFriday = document.getElementById('btn-friday');
 btnFriday.addEventListener('click', swapTextInFriday);
+
+//6 - Efeito zoom
+function dayZoomOn(element) {
+  const e = element.target;
+  e.style.fontSize = 'xx-large';
+}
+
+function dayZoomOff(element) {
+  const e = element.target;
+  e.style.fontSize = '20px';
+}
+
+const arrayLiDay = document.querySelectorAll('.day');
+for (let index = 0; index < arrayLiDay.length; index++) {
+  arrayLiDay[index].addEventListener('mouseover', dayZoomOn);
+  arrayLiDay[index].addEventListener('mouseleave', dayZoomOff); 
+}
