@@ -130,3 +130,13 @@ function isSelectedDiv() {
 }
 colorfulDiv.addEventListener('click', isSelectedDiv);
 
+//10 - Adicionando cor da tarefa no dia
+function colorDay(elemento) {
+  const e = elemento.target;
+  const colorfulDivColor = colorfulDiv.style.backgroundColor;
+  if (colorfulDiv.className === 'task selected') e.style.color = colorfulDivColor;
+  else e.style.color = 'rgb(119,119,119)';
+}
+for (let index = 0; index < arrayLiDay.length; index++) {
+  arrayLiDay[index].addEventListener('click', colorDay);
+}
