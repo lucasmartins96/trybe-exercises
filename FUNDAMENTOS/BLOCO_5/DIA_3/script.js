@@ -147,8 +147,12 @@ const appointmentsInput = document.getElementById('task-input');
 function createAppointments() {
   const appointmentsListItem = document.createElement('li');
   const inputText = appointmentsInput.value;
-  appointmentsListItem.innerText = inputText;
-  appointmentsList.appendChild(appointmentsListItem);
+  if (inputText == '') {
+    alert('Informe algum caractere');
+  } else {
+    appointmentsListItem.innerText = inputText;
+    appointmentsList.appendChild(appointmentsListItem);
+  }
 }
 const addAppointmentsButton = document.getElementById('btn-add');
 addAppointmentsButton.addEventListener('click', createAppointments);
