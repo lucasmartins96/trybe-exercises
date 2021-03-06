@@ -120,3 +120,11 @@ function createColorfulCaptionDiv(color) {
   document.querySelector('.my-tasks').appendChild(divTask);
 }
 createColorfulCaptionDiv('red');
+
+//9 - Adiciona a classe selected na div task
+const colorfulDiv = document.querySelector('.my-tasks').lastChild;
+function isSelectedDiv() {
+  if (colorfulDiv.className === 'task') colorfulDiv.className = 'task selected';
+  else colorfulDiv.className = 'task';
+}
+colorfulDiv.addEventListener('click', isSelectedDiv);
