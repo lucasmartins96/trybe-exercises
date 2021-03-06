@@ -111,3 +111,12 @@ function createTask(nameTask) {
   document.querySelector('.my-tasks').appendChild(task);
 }
 createTask('Planejar a semana');
+
+//8 - Adiciona legenda colorida da tarefa
+function createColorfulCaptionDiv(color) {
+  const divTask = document.createElement('div');
+  divTask.className = 'task';
+  divTask.style.backgroundColor = color;
+  document.querySelector('.my-tasks').appendChild(divTask);
+}
+createColorfulCaptionDiv('red');
