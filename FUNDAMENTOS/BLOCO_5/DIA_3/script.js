@@ -47,3 +47,17 @@ function createHolidayButton(dayString) {
   document.querySelector('.buttons-container').appendChild(btnHoliday);
 }
 createHolidayButton('Feriados');
+
+//3 - Adicionando evento no botão Feriados
+function updateBackgroundColorHolidays() {
+  const arrayHolidays = document.getElementsByClassName('holiday');
+  for (let index = 0; index < arrayHolidays.length; index++) {
+    if (arrayHolidays[index].style.backgroundColor === 'rgb(238, 238, 238)' || arrayHolidays[index].style.backgroundColor === '') {
+      arrayHolidays[index].style.backgroundColor = 'darkgreen';
+    } else {
+      arrayHolidays[index].style.backgroundColor = 'rgb(238,238,238)';
+    }
+  }
+}
+const btnHoliday = document.getElementById('btn-holiday');
+btnHoliday.addEventListener('click', updateBackgroundColorHolidays);
