@@ -7,7 +7,7 @@
   <title>Cadastro de currículo</title>
 </head>
 <body>
-  <form action="">
+  <form action="" method="GET">
     <fieldset>
       <label for="name-user">Nome:
         <input type="text" name="nome" id="name-user" maxlength="40" required>
@@ -34,9 +34,27 @@
       </label>
       <br><br>
       <p>Residência:</p>
-      <label for="house"><input type="radio" name="residencia" id="house" required>Casa</label>
+      <label for="house"><input type="radio" name="residencia" id="house" checked required>Casa</label>
       <label for="apartment"><input type="radio" name="residencia" id="apartment" required>Apartamento</label>
     </fieldset>
+    <fieldset>
+      <p>Resumo do currículo:</p>
+      <textarea name="resume" id="resume" cols="80" rows="10" maxlength="1000" required></textarea>
+      <br><br>
+      <label for="office">Cargo:
+        <input type="text" name="office" id="office-user" maxlength="40" size="30" required>
+      </label>
+      <br><br>
+      <label for="office-desc">Descrição do cargo:
+        <input type="text" name="office-description" id="office-desc" maxlength="500" size="40" required>
+      </label>
+      <br><br>
+      <label for="starting-date">Data de início:
+        <input type="date" name="starting-date" id="starting-date-user" required>
+      </label>
+      <br><br>
+    </fieldset>
+    <button type="submit">Enviar</button>
   </form>
   <script src="script.js"></script>
 </body>
