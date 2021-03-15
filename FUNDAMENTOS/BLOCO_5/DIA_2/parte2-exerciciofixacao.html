@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buscando elementos</title>
+</head>
+<body>
+  <div id="paiDoPai">
+    <div id="pai">
+      <div id="primeiroFilho"></div>
+      <div id="elementoOndeVoceEsta">
+        <div id="primeiroFilhoDoFilho"></div>
+        <div id="segundoEUltimoFilhoDoFilho"></div>
+      </div>
+      Atenção!
+      <div id="terceiroFilho"></div>
+      <div id="quartoEUltimoFilho"></div>
+    </div>
+  </div>
+  <script>
+    //1 - Crie um irmão para elementoOndeVoceEsta .
+      let divBrotherElementoOndeVoceEsta = document.createElement('div');
+      document.querySelector('#pai').appendChild(divBrotherElementoOndeVoceEsta);
+
+    //2 - Crie um filho para elementoOndeVoceEsta .
+      let childElementoOndeVoceEsta = document.createElement('div');
+      document.querySelector('#elementoOndeVoceEsta').appendChild(childElementoOndeVoceEsta);
+
+    //3 - Crie um filho para primeiroFilhoDoFilho .
+      let childPrimeiroFilhoDoFilho = document.createElement('div');
+      childPrimeiroFilhoDoFilho.id = 'filhoDoPrimeiroFilhoDoFilho'
+      document.querySelector('#primeiroFilhoDoFilho').appendChild(childPrimeiroFilhoDoFilho);
+
+    //4 - A partir desse filho criado, acesse terceiroFilho .
+      document.querySelector('filhoDoPrimeiroFilhoDoFilho');
+      document.querySelector('#filhoDoPrimeiroFilhoDoFilho').parentElement.parentElement.nextElementSibling;
+  </script>
+</body>
+</html>
