@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro de currículo</title>
+</head>
+<body>
+  <form action="">
+    <fieldset>
+      <label for="name-user">Nome:
+        <input type="text" name="nome" id="name-user" maxlength="40" required>
+      </label>
+      <br><br>
+      <label for="email-user">Email:
+        <input type="email" name="email" id="email-user" maxlength="50" required>
+      </label>
+      <br><br>
+      <label for="cpf-user">CPF:
+        <input type="text" name="cpf" id="cpf-user" maxlength="11" required>
+      </label>
+      <br><br>
+      <label for="endereco">Endereço:
+        <input type="text" name="endereco" id="endereco" maxlength="200" size="40" required>
+      </label>
+      <br><br>
+      <label for="cidade">Cidade:
+        <input type="text" name="cidade" id="city-user" maxlength="28" required>
+      </label>
+      <br><br>
+      <label for="state-user">Estado:
+        <select name="estado" id="state-user" required></select>
+      </label>
+      <br><br>
+      <p>Residência:</p>
+      <label for="house"><input type="radio" name="residencia" id="house">Casa</label>
+      <label for="apartment"><input type="radio" name="residencia" id="apartment">Apartamento</label>
+    </fieldset>
+  </form>
+</body>
+</html>
