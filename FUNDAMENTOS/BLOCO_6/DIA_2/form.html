@@ -21,7 +21,7 @@
       <h3 class="ui dividing header">Informações pessoais</h3>
       <div class="field"> 
         <label for="name-user">Nome</label>
-        <input type="text" name="nome" id="name-user" placeholder="Insira seu Nome completo" maxlength="40" required>
+        <input type="text" name="nome" id="name-user" placeholder="Insira seu Nome completo" data-validate-field="name" >
       </div>
       <div class="field">
         <label for="email-user">Email</label>
@@ -79,7 +79,7 @@
     </form>
   </div>
   <script src="script.js"></script>
-  <script src=""></script>
+  <script src="just-validate.min.js"></script>
   <script>
       var picker = new Pikaday({
         field: document.getElementById('datepicker'),
