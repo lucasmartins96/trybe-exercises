@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro de currículo</title>
+  <script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href="semantic.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="semantic.min.js"></script>
+</head>
+<body>
+  <div>
+    <form action="" method="GET" class="ui big form">
+      <h3 class="ui dividing header">Informações pessoais</h3>
+      <div class="field"> 
+        <label for="name-user">Nome</label>
+        <input type="text" name="nome" id="name-user" placeholder="Insira seu Nome completo" maxlength="40" required>
+      </div>
+      <div class="field">
+        <label for="email-user">Email</label>
+        <input type="email" name="email" id="email-user" placeholder="Insira seu Email" maxlength="50" required>
+      </div>
+      <div class="field">
+        <label for="cpf-user">CPF</label>
+        <input type="text" name="cpf" id="cpf-user" placeholder="Insira seu CPF" maxlength="11" required>
+      </div>
+      <div class="field">
+        <label for="endereco">Endereço</label>
+        <input type="text" name="endereco" id="endereco" placeholder="Insira seu Endereço completo" maxlength="200" size="40" required>
+      </div>
+      <div class="field">
+        <label for="cidade">Cidade</label>
+        <input type="text" name="cidade" id="city-user" placeholder="Insira sua Cidade" maxlength="28" required>
+      </div>
+      <div class="field">
+        <label for="state-user">Estado</label>
+        <select name="estado" id="brazil-states" required></select>
+      </div>
+      <div class="inline fields">
+        <label>Residência</label>
+        <div class="field">
+          <div class="ui radio checkbox">
+            <input type="radio" name="residencia" id="house" class="hidden" checked>
+            <label for="house">Casa</label>
+          </div>
+        </div>
+        <div class="field">
+          <div class="ui radio checkbox">
+            <input type="radio" name="residencia" id="apartament" class="hidden">
+            <label for="apartament">Apartamento</label>
+          </div>
+        </div>
+      </div>
+      <h3 class="ui dividing header">Sua experiência</h3>
+      <div class="field">
+        <label>Resumo do currículo</label>
+        <textarea name="resume" id="resume" maxlength="1000" required></textarea>
+      </div>
+      <div class="field">
+        <label for="office">Cargo</label>
+        <input type="text" name="office" id="office-user" maxlength="40" size="30" required>
+      </div>
+      <div class="field">
+        <label for="office-desc">Descrição do cargo</label>
+        <input type="text" name="office-description" id="office-desc" maxlength="500" size="40" required>
+      </div>
+      <div class="field">
+        <label for="starting-date">Data de início</label>
+        <input type="text" name="starting-date" id="starting-date-user" required>
+      </div>
+      <button class="ui button" type="submit">Enviar</button>
+    </form>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
