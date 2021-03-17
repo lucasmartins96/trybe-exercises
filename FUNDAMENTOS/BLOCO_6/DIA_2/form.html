@@ -12,6 +12,8 @@
   <link rel="stylesheet" type="text/css" href="semantic.min.css">
   <link rel="stylesheet" href="style.css">
   <script src="semantic.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/pikaday/pikaday.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/pikaday/css/pikaday.css">
 </head>
 <body>
   <div>
@@ -71,11 +73,34 @@
       </div>
       <div class="field">
         <label for="starting-date">Data de início</label>
-        <input type="text" name="starting-date" id="starting-date-user" required>
+        <input type="text" name="starting-date" id="datepicker" required>
       </div>
       <button class="positive ui button" type="submit">Enviar</button>
     </form>
   </div>
   <script src="script.js"></script>
+  <script src=""></script>
+  <script>
+      var picker = new Pikaday({
+        field: document.getElementById('datepicker'),
+        format: 'DD/MM/YYYY',
+        toString(date, format) {
+            // you should do formatting based on the passed format,
+            // but we will just return 'D/M/YYYY' for simplicity
+            const day = date.getDate();
+            const month = date.getMonth() + 1;
+            const year = date.getFullYear();
+            return `${day}/${month}/${year}`;
+        },
+        parse(dateString, format) {
+            // dateString is the result of `toString` method
+            const parts = dateString.split('/');
+            const day = parseInt(parts[0], 10);
+            const month = parseInt(parts[1], 10) - 1;
+            const year = parseInt(parts[2], 10);
+            return new Date(year, month, day);
+        }
+      });
+  </script>
 </body>
 </html>
