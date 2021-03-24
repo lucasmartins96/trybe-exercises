@@ -14,5 +14,22 @@ const factorial = (number) => {
 }
 // factorial(4);
 /* Bônus */
-const factorialRecursive = (number) => (number === 0) ? 1 : number * factorialRecursive(number - 1); 
+const factorialRecursive = (number) => (number === 0) ? 1 : number * factorialRecursive(number - 1);
 console.log(factorialRecursive(4));
+
+/*
+2 - Crie uma função que receba uma frase e retorne qual a maior palavra.
+*/
+const longestWord = (phrase) => {
+  const words = phrase.split(' ');
+  let maxLength = 0;
+  let longestWord;
+  for (let index = 0; index < words.length; index += 1) {
+    if (words[index].length > maxLength) {
+      maxLength = words[index].length;
+      longestWord = words[index];
+    }
+  }
+  return longestWord;
+}
+console.log(longestWord("Antônio foi no banheiro e não sabemos o que aconteceu")); // retorna 'aconteceu'
