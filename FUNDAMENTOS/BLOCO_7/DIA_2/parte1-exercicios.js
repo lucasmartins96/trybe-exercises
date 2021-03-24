@@ -46,7 +46,7 @@ const customerInfo = (order) => {
   console.log(`Olá ${deliveryPerson}, entrega para: ${customerName}, Telefone: ${customerTel}, R. ${customerStreet}, Nº ${customerNumber}, AP: ${customerApartment}`);
 }
 
-// customerInfo(order);
+customerInfo(order);
 
 const orderModifier = (order) => {
   const orderObj = order;
