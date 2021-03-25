@@ -26,4 +26,11 @@ function addProps(obj, newKey, value) {
   obj[newKey] = value;
 }
 addProps(lesson2, 'turno', 'manhã');
-console.log(lesson2);
+
+/*
+2 - Crie uma função para listar as keys de um objeto. Essa função deve receber um objeto como parâmetro.
+*/
+const listObjectKeys = (obj) => {
+  return Object.keys(obj);
+}
+listObjectKeys(lesson1);
