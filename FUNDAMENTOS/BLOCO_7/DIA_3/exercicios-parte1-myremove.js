@@ -21,3 +21,6 @@ assert.notDeepStrictEqual(myRemove([1, 2, 3, 4], 3), [1, 2, 3, 4]);
 const myList = [5, 6, 7, 8];
 myRemove(myList, 5);
 assert.deepStrictEqual(myList, [5, 6, 7, 8]);
+
+//4 - Verifique se a chamada myRemove([1, 2, 3, 4], 5) retorna o array esperado
+assert.deepStrictEqual(myRemove([1, 2, 3, 4], 5), [1, 2, 3, 4]);
