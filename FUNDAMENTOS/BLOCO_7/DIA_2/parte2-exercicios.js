@@ -38,3 +38,9 @@ listObjectKeys(lesson1);
 */
 const showObjLenght = obj => Object.keys(obj).length;
 showObjLenght(lesson3);
+
+/*
+4 - Crie uma função para listar os valores de um objeto. Essa função deve receber um objeto como parâmetro.
+*/
+const showObjValues = obj => Object.values(obj);
+showObjValues(lesson2);
