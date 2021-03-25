@@ -68,4 +68,15 @@ Ao executar o comando console.log(allLessons) , a saída deverá ser a seguinte:
 };
 */
 const allLessons = Object.assign({}, {lesson1}, {lesson2}, {lesson3});
-console.log(allLessons);
+
+/*
+6 - Usando o objeto criado no exercício 5, crie uma função que retorne o número total de estudantes em todas as aulas.
+*/
+const showStudentsAmount = (obj) => {
+  let studentsAmount = 0;
+  for (const key in obj) {
+    studentsAmount += obj[key].numeroEstudantes;
+  }
+  return studentsAmount;
+}
+showStudentsAmount(allLessons);
