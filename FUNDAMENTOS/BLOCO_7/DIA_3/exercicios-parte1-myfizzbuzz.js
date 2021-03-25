@@ -17,3 +17,6 @@ assert.strictEqual(myFizzBuzz(18), 'fizz');
 
 //3 - Faça uma chamada com um número divisível por 5 e verifique se o retorno é o esperado
 assert.strictEqual(myFizzBuzz(20), 'buzz');
+
+//4 - Faça uma chamada com um número que não é divisível por 3 ou 5 e verifique se o retorno é o esperado
+assert.strictEqual(myFizzBuzz(19), 19);
