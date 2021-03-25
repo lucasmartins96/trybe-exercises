@@ -30,7 +30,11 @@ addProps(lesson2, 'turno', 'manhã');
 /*
 2 - Crie uma função para listar as keys de um objeto. Essa função deve receber um objeto como parâmetro.
 */
-const listObjectKeys = (obj) => {
-  return Object.keys(obj);
-}
+const listObjectKeys = obj => Object.keys(obj);
 listObjectKeys(lesson1);
+
+/*
+3 - Crie uma função para mostrar o tamanho de um objeto.
+*/
+const showObjLenght = obj => Object.keys(obj).length;
+showObjLenght(lesson3);
