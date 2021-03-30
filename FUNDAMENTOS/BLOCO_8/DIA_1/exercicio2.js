@@ -10,13 +10,11 @@ const sorted = (n) => {
   if (isSorted) return `Parabéns você ganhou`;
   return `Tente novamente`;
 } */
-const check = (num1, num2) => (num1 === num2);
+const check = (num1, num2) => (num1 === num2) ? `Parabéns você ganhou` : `Tente novamente`;
 
-const result = (myNumber, action) => {
+const aposta = (myNumber, action) => {
   const randomNum = Math.ceil(Math.random() * 5);
-  return (action(myNumber, randomNum)) ? `Parabéns você ganhou` : `Tente novamente`;
+  return (action(myNumber, randomNum));
 }
 
-console.log(result(3, check));
-
-//TENTAR REFATORAR
+console.log(aposta(3, check));
