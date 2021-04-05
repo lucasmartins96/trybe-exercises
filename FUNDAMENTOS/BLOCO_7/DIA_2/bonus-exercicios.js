@@ -35,7 +35,7 @@ const getNumberOfStudentsMath = (obj) => {
   }
   return total;
 }
-console.log(getNumberOfStudents(allLessons));
+console.log(getNumberOfStudentsMath(allLessons));
 
 /*
 Exercício 2
