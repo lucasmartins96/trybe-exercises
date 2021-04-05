@@ -8,11 +8,9 @@ Se for, a função retorna true , se não for, a função retorna false .
 const correctAnswer = 'higher order function';
 const userAnswer = 'HIGHER ORDER FUNCTION';
 */
-const checarResposta = (correctAnswer) => (myAnswer) => (correctAnswer.toLowerCase() === myAnswer.toLowerCase());
+const CORRECT_ANSWER = 'higher order function';
+const USER_ANSWER = 'HIGHER ORDER FUNCTION';
 
-const check = checarResposta('35')('35');
-// const minhaResposta = respostaCorreta();
-// const estaCorreto = minhaResposta;
-console.log(check);
+const checkAnswer2 = (correctAnswer) => (userAnswer) => correctAnswer === userAnswer.toLowerCase();
 
-//TENTAR REFATORAR
+console.log(checkAnswer2(CORRECT_ANSWER)(USER_ANSWER));
