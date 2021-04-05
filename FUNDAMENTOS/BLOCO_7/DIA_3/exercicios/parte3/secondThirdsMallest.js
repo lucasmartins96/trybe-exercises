@@ -1,6 +1,6 @@
 //4 - Use a variável parameter como parâmetro da função abaixo, escreva testes para verificar se a mesma está retornando como se vê na variável result e, caso não esteja, altere o código para que ele passe nos testes.
 function secondThirdSmallest(array) {
-  let results = []
+  let results = [];
   array.sort((x, y) => x - y);
   results = [array[1], array[2]];
   return results;
