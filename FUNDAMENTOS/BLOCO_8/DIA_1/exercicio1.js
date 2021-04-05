@@ -3,19 +3,20 @@ Crie uma função de primeira classe que retorna um objeto { nomeCompleto, email
 Passe sua função como parâmetro da HOF newEmployees para criar cada pessoa contratada em seu respectivo id . 
 A sua função deve receber como parâmetro o nome completo da pessoa funcionária e a partir dele gerar automaticamente um email no formato nome_da_pessoa@trybe.com .
 */
-const hiredPerson = (nomeCompleto) => ({
-  fullName: nomeCompleto,
-  email: `${nomeCompleto}@trybe.com`, //criar função de substituição
-});
+const employeeGenerator = (fullName) => {
+  const email = fullName.toLowerCase().split(' ').join('_');
+  return { fullName, email: `${email}@trybe.com` };
+};
 
-const newEmployees = () => {
+const newEmployees = (callback) => {
   const employees = {
-    id1: hiredPerson('Lucas'), // Nome: Pedro Guerra -> Chame sua função passando o nome Pedro Guerra como parâmetro
-    id2: hiredPerson('Márcia'), // Nome: Luiza Drumond -> Chame sua função passando o nome Luiza Drumond como parâmetro
-    id3: hiredPerson('Matheus'), // Nome: Carla Paiva -> Chame sua função passando o nome Carla Paiva como parâmetro
-  }
+    id1: callback('Pedro Guerra'),
+    id2: callback('Luiza Drumond'),
+    id3: callback('Carla Paiva'),
+  };
   return employees;
 };
-console.table(newEmployees());
+
+console.log(newEmployees(employeeGenerator));
 
 // TENTAR REFATORAR
