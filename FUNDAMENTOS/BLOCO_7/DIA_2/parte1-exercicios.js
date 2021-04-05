@@ -48,14 +48,14 @@ const customerInfo = (order) => {
 
 customerInfo(order);
 
+
 const orderModifier = (order) => {
-  const orderObj = order;
-  const customerName = 'Luiz Silva';
-  const orderPayment = 50;
-  orderObj.name = customerName;
-  orderObj.payment = orderPayment;
-  
-  console.log(`Olá ${orderObj.name}, o total do seu pedido de ${Object.keys(orderObj.order.pizza)} e ${orderObj.order.drinks.coke.type} é R$ ${orderObj.payment},00.`);
+  const newBuyer = order.name = 'Luiz Silva';
+  const pizzas = Object.keys(obj.order.pizza);
+  const drinks = order.order.drinks.coke.type;
+  const newTotal = order.payment.total = '50';
+
+  console.log(`Olá ${newBuyer}, o total do seu pedido de ${pizzas} e ${drinks} é R$ ${newTotal},00.`);
 }
 
 orderModifier(order);
