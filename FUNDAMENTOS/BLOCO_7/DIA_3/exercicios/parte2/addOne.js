@@ -2,7 +2,7 @@ const assert = require('assert');
 const addOne = (arr) => {
   const newArr = [];
   for (let index = 0; index < arr.length; index += 1) {
-    newArr.push(arr[index]+1);
+    newArr.push(arr[index] + 1);
   }
   return newArr;
 };
