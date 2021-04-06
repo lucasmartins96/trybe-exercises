@@ -69,10 +69,10 @@ const books = [
 */
 
 function allNames() {
-  const out = books.reduce((acc, obj) => {
+  const names = books.reduce((acc, obj) => {
     return `${acc} ${obj.author.name},`;
   }, 'Nomes:');
-  return out.replace(/,$/, '.');
+  return names.replace(/,$/, '.');
 }
 
 assert.deepStrictEqual(allNames(), 'Nomes: George R. R. Martin, J. R. R. Tolkien, Isaac Asimov, Frank Herbert, Stephen King, H. P. Lovecraft.');
