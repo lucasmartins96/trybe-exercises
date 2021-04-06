@@ -14,7 +14,7 @@ const names = [
 function containsA() {
   return names.reduce((acc, name) => {
     const numberLettersA = name.match(/[aA]/g).length;
-    return acc += numberLettersA;
+    return acc + numberLettersA;
   }, 0);
 }
 
