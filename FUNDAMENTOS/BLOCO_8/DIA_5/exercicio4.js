@@ -33,15 +33,7 @@ const people = [
 4 - Escreva uma função filterPeople que, dada uma lista de pessoas, retorna todas as pessoas australianas que nasceram no século 20:
 */
 function filterPeople(peoples) {
-  return peoples.filter(({ name, bornIn, nationality }) => {
-    if (nationality === 'Australian' && bornIn < 2001) {
-      return {
-        name,
-        bornIn,
-        nationality
-      }
-    }
-  });
+  return peoples.filter(({ bornIn, nationality }) => (nationality === 'Australian' && bornIn < 2001));
 }
 
 const filteredPeople = filterPeople(people);
