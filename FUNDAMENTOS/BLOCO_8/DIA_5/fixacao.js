@@ -14,3 +14,24 @@ const fruitSalad = (fruit, additional) => {
 };
 
 console.log(fruitSalad(specialFruit, additionalItens));
+
+/*
+Fixação default destructuring 
+*/
+const getNationality = ({ firstName, nationality }) => `${firstName} is ${nationality}`;
+
+const person = {
+  firstName: 'João',
+  lastName: 'Jr II',
+};
+
+const otherPerson = {
+  firstName: 'Ivan',
+  lastName: 'Ivanovich',
+  nationality: 'Russian',
+};
+
+const { nationality = 'Brazilian' } = person;
+
+console.log(getNationality(otherPerson)); // Ivan is Russian
+console.log(getNationality(person));
