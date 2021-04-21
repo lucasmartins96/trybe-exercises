@@ -23,7 +23,7 @@ const getUserName = (userID) => {
   return findUserById(userID).then(user => user.name);
 };
 
-describe('Testando a função getUserName', () => {
+describe('Testando a função getUserName com promises', () => {
   it('Retorna o nome do usuário quando o seu id é passado no parâmetro da função', () => {
     expect.assertions(1);
     return getUserName(4).then(name => {
@@ -36,5 +36,22 @@ describe('Testando a função getUserName', () => {
     return getUserName(3).catch(error => {
       expect(error).toEqual({ error: 'User with 3 not found.'});
     });
+  });
+});
+
+describe('Testando a função getUserName com async/await', () => {
+  it('Retorna o nome do usuário quando o seu id é passado no parâmetro da função', async () => {
+    expect.assertions(1);
+    const userMark = await getUserName(4);
+    expect(userMark).toBe('Mark');
+  });
+
+  it('Retorna a mensagem \'User with id not found.\' se o id passado no parâmetro não for de um funcionário existente', async () => {
+    expect.assertions(1);
+    try {
+      await getUserName(3);
+    } catch (error) {
+      expect(error).toEqual({ error: 'User with 3 not found.'});
+    }
   });
 });
