@@ -15,18 +15,26 @@ describe('randomNumber tests', () => {
     expect(randomNumber).toHaveBeenCalledTimes(1);
     expect(randomNumber).toHaveBeenCalledWith(8, 2);
   });
+});
 
-  it('Verifica se a função foi implementada com a multiplicação de 3 números', () => {
+describe('Testando implementações', () => {
+  it('Mockando função para receber 3 parâmetros e retornar sua multiplicação', () => {
     randomNumber = jest.fn((a, b, c) => a * b * c);
-    expect(randomNumber(8, 2, 4)).not.toBe(undefined);
     expect(randomNumber(8, 2, 4)).toBe(64);
+    expect(randomNumber).toHaveBeenCalled();
+    expect(randomNumber).toHaveBeenCalledTimes(1);
+    expect(randomNumber).toHaveBeenCalledWith(8, 2, 4);
   });
 
-  it('Verifica se a função foi implementada retornando o dobro do parâmetro', () => {
+  it('Mockando função que recebe um parâmetro e retorna seu dobro', () => {
     randomNumber.mockReset();
+    expect(randomNumber).toHaveBeenCalledTimes(0);
+    
     randomNumber = jest.fn((number) => number * 2);
-    expect(randomNumber(8)).not.toBe(undefined);
-    expect(randomNumber(8)).not.toBe(NaN);
+
     expect(randomNumber(8)).toBe(16);
+    expect(randomNumber).toHaveBeenCalled();
+    expect(randomNumber).toHaveBeenCalledTimes(1);
+    expect(randomNumber).toHaveBeenCalledWith(8);
   });
 });
