@@ -8,10 +8,12 @@ describe('randomNumber tests', () => {
     expect(randomNumber).toHaveBeenCalledTimes(1);
   });
 
-  it('Verifica se a função foi implementada uma vez para dividir', () => {
+  it('Testando se a função foi chamada, qual seu retorno, quantas vezes foi chamada e com quais parâmetros', () => {
     randomNumber = jest.fn().mockImplementationOnce((a, b) => a / b);
     expect(randomNumber(8, 2)).toBe(4);
-    expect(randomNumber(8, 2)).not.toBe(4);
+    expect(randomNumber).toHaveBeenCalled();
+    expect(randomNumber).toHaveBeenCalledTimes(1);
+    expect(randomNumber).toHaveBeenCalledWith(8, 2);
   });
 
   it('Verifica se a função foi implementada com a multiplicação de 3 números', () => {
