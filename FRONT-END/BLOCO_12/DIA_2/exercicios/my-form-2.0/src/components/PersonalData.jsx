@@ -1,19 +1,20 @@
 import React, { Component } from 'react';
 import RowInputText from './RowInputText';
 import RadioOption from './RadioOption';
-import SelectBrazilianStates from './SelectBrazilianStates';
+import SelectBrazilianStates from './brazilian-states/Select';
 
 class PersonalData extends Component {
   render() {
     return (
-      <div>
-        <RowInputText id="inputName" innerTextLabel="Nome"/>
-        <RowInputText id="inputEmail" innerTextLabel="Email"/>
-        <RowInputText id="inputCPF" innerTextLabel="CPF"/>
-        <RowInputText id="inputAddress" innerTextLabel="Endereço"/>
-        <RowInputText id="inputCity" innerTextLabel="Cidade"/>
+      <fieldset>
+        <legend className="text-center">Dados pessoais</legend>
+        <RowInputText id="inputName">Nome</RowInputText>
+        <RowInputText id="inputEmail">Email</RowInputText>
+        <RowInputText id="inputCPF">CPF</RowInputText>
+        <RowInputText id="inputAddress">Endereço</RowInputText>
+        <RowInputText id="inputCity">Cidade</RowInputText>
         <div className="row mb-3">
-          <label htmlFor="" className="col-sm-2 col-form-label">Estado</label>
+          <label htmlFor="estados" className="col-sm-2 col-form-label">Estado</label>
           <div className="col-sm-10">
             <SelectBrazilianStates />
           </div>
@@ -21,11 +22,11 @@ class PersonalData extends Component {
         <fieldset className="row mb-3">
           <legend className="col-form-label col-sm-2 pt-0">Tipo residência</legend>
           <div className="col-sm-10">
-            <RadioOption id="house" innerTextLabel="Casa"/>
-            <RadioOption id="apartment" innerTextLabel="Apartamento"/>
+            <RadioOption id="house">Casa</RadioOption>
+            <RadioOption id="apartment">Apartamento</RadioOption>
           </div>
         </fieldset>
-      </div>
+      </fieldset>
     )
   }
 }
