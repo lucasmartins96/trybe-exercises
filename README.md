@@ -26,27 +26,25 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [X] 3-2: _HTML & CSS - Primeiros passos em CSS_
 - [X] 3-3: _HTML & CSS - Seletores e posicionamento_
 - [X] 3-4: _HTML Semântico_
-- [X] 3-5: _[Projeto - HTML & CSS](https://github.com/tryber/sd-010-b-project-lessons-learned/pull/53)_
-
+- [X] 3-5: _[Projeto - HTML & CSS](https://github.com/lucasmartins96/lessons-learned)_ <!-- PR: https://github.com/tryber/sd-010-b-project-lessons-learned/pull/53 -->
 ##### Bloco 4: Introdução - JavaScript
 
 - [X] 4-1: _JavaScript - Primeiros passos_
 - [X] 4-2: _JavaScript - Array e loop For_
 - [X] 4-3: _JavaScript - Lógica de Programação e Algoritmos_
 - [X] 4-4: _JavaScript - Objetos e funções_
-- [x] 4-5: _[Projeto - Playground Functions](https://github.com/tryber/sd-010-b-project-playground-functions/pull/57)_
-
+- [x] 4-5: _[Projeto - Playground Functions](https://github.com/lucasmartins96/playground-functions)_ <!-- PR: https://github.com/tryber/sd-010-b-project-playground-functions/pull/57 -->
 ##### Bloco 5: Introdução - JavaScript - Projetos
 
 - [X] 5-1: _JavaScript - DOM e seletores_
 - [X] 5-2: _JavaScript - Trabalhando com elementos_
 - [X] 5-3: _JavaScript - Eventos_
 - [X] 5-4: _JavaScript - Web Storage_
-- [X] 5-5: _[Projeto - Meme Generator]()_
-- [X] 5-6: _[Projeto - Arte com Pixels]()_
-- [X] 5-7: _[Projeto - Lista de tarefas]()_
-- [X] 5-7: _[Projeto - Adivinhe a Cor]()_
-- [X] 5-7: _[Projeto - Carta Misteriosa]()_
+- [X] 5-5: _[Projeto - Meme Generator]()_ <!-- PR: -->
+- [X] 5-6: _[Projeto - Arte com Pixels](https://github.com/lucasmartins96/pixels-art)_ <!-- PR: https://github.com/tryber/sd-010-b-project-pixels-art/pull/26 -->
+- [X] 5-7: _[Projeto - Lista de tarefas](https://github.com/lucasmartins96/to-do-list)_ <!-- PR: https://github.com/tryber/sd-010-b-project-todo-list/pull/24 -->
+- [X] 5-7: _[Projeto - Adivinhe a Cor](https://github.com/lucasmartins96/color-guess)_ <!-- PR: https://github.com/tryber/sd-010-b-project-color-guess/pull/12 -->
+- [X] 5-7: _[Projeto - Carta Misteriosa](https://github.com/lucasmartins96/mistery-letter)_ <!-- PR: https://github.com/tryber/sd-010-b-project-mistery-letter/pull/10 -->
 
 ##### Bloco 6: HTML & CSS avançado
 
@@ -55,14 +53,14 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [X] 6-3: _CSS Flexbox - Part 1_
 - [X] 6-4: _CSS Flexbox - Part 2_
 - [X] 6-5: _CSS Responsivo - Mobile First_
-- [X] 6-6: _[Projeto - Página inicial do Facebook]()_
+- [X] 6-6: _[Projeto - Página inicial do Facebook]()_ <!-- PR: -->
 
 ##### Bloco 7: JavaScript ES6 & Testes Unitários
 
 - [X] 7-1: _JavaScript ES6 - let, const, arrow functions e template literals_
 - [X] 7-2: _JavaScript ES6 - Objects_
 - [X] 7-3: _Testes unitários em JavaScript_
-- [X] 7-4: _[Projeto - JavaScript Testes Unitários]()_
+- [X] 7-4: _[Projeto - JavaScript Testes Unitários]()_ <!-- PR: -->
 
 ##### Bloco 8: JavaScript ES6
 
@@ -70,20 +68,20 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [X] 8-2: _JavaScript ES6 - Higher Order Functions - map e filter_
 - [X] 8-3: _JavaScript ES6 - Higher Order Functions - reduce_
 - [X] 8-4: _JavaScript ES6 - spread operator, rest parameter, destructuring e mais_
-- [X] 8-5: _[Projeto - Zoo functions]()_
+- [X] 8-5: _[Projeto - Zoo functions]()_ <!-- PR: -->
 
 ##### Bloco 9: Assincronicidade & Callbacks
 
 - [X] 9-1: _JavaScript Assíncrono e Callbacks_
 - [X] 9-2: _JavaScript Promises_
-- [X] 9-3: _[Projeto - Carrinho de Compras]()_
+- [X] 9-3: _[Projeto - Carrinho de Compras]()_ <!-- PR: -->
 
 ##### Bloco 10: Jest
 
 - [X] 10-1: _Primeiros passos no Jest_
 - [X] 10-2: _Jest - Testes Assíncronos_
 - [X] 10-3: _Jest - Simulando comportamentos_
-- [X] 10-4: _[Projeto - Jest Assíncrono e Mocking]()_
+- [X] 10-4: _[Projeto - Jest Assíncrono e Mocking]()_ <!-- PR: -->
 
 ## Desenvolvimento Front-end :hourglass_flowing_sand:
 
@@ -91,31 +89,31 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 - [X] 11-1: _'Hello, world!' no React!_
 - [X] 11-2: _Componentes React_
-- [ ] 11-3: _[Projeto - Movie Cards Library]()_
+- [ ] 11-3: _[Projeto - Movie Cards Library]()_ <!-- PR: -->
 
 ##### Bloco 12: React
 
 - [ ] 12-1: _Components com estado_
 - [ ] 12-2: _Eventos e formulários no React_
-- [ ] 12-3: _[Projeto - Movie Cards Library Stateful]()_
+- [ ] 12-3: _[Projeto - Movie Cards Library Stateful]()_ <!-- PR: -->
 
 ##### Bloco 13: React
 
 - [ ] 13-1: _Melhorando o reuso de componentes: props.children e PropTypes_
 - [ ] 13-2: _Ciclo de vida de componentes em React_
 - [ ] 13-3: _React Router_
-- [ ] 13-4: _[Projeto - Movie Cards Library CRUD]()_
+- [ ] 13-4: _[Projeto - Movie Cards Library CRUD]()_ <!-- PR: -->
 
 ##### Bloco 14: Metodologias ágeis
 
 - [ ] 14-1: _Metodologias ágeis_
-- [ ] 14-2: _[Projeto - Frontend Online Store]()_
+- [ ] 14-2: _[Projeto - Frontend Online Store]()_ <!-- PR: -->
 
 ##### Bloco 15: Testes em React
 
 - [ ] 15-1: _Testando React com a React Testing Library_
 - [ ] 15-2: _Testando React com a React Testing Library - Parte 2_
-- [ ] 15-3: _[Projeto - Testes em React]()_
+- [ ] 15-3: _[Projeto - Testes em React]()_ <!-- PR: -->
 
 ##### Bloco 16: Introdução ao Redux
 
@@ -124,22 +122,22 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [ ] 16-3: _React com Redux - Prática_
 - [ ] 16-4: _React com Redux - Parte 2_
 - [ ] 16-5: _Testes síncronos com React-Redux_
-- [ ] 16-6: _[Projeto - Tabela com filtros de dados]()_
+- [ ] 16-6: _[Projeto - Tabela com filtros de dados]()_ <!-- PR: -->
 
 ##### Bloco 17: Projeto React
 
-- [ ] 17-1: _[Projeto - Jogo de Trivia]()_
+- [ ] 17-1: _[Projeto - Jogo de Trivia]()_ <!-- PR: -->
 
 ##### Bloco 18: React & Context API
 
 - [ ] 18-1: _Context API do React_
 - [ ] 18-2: _React Hooks - useState e useContext_
 - [ ] 18-3: _React Hooks - useEffect e Hooks customizados_
-- [ ] 18-4: _[Projeto - StarWars Datatable com Context API e Hooks]()_
+- [ ] 18-4: _[Projeto - StarWars Datatable com Context API e Hooks]()_ <!-- PR: -->
 
 ##### Bloco 19: Projeto Final de Front-end
 
-- [ ] 19-1: _[Projeto - App de Receitas]()_
+- [ ] 19-1: _[Projeto - App de Receitas]()_ <!-- PR: -->
 
 ## Desenvolvimento Back-end :hourglass_flowing_sand:
 
@@ -260,3 +258,4 @@ Window
 ×
 ×
 ×
+<!-- PR: -->
