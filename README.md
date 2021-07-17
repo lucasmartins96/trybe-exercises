@@ -53,14 +53,14 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [X] 6-3: _CSS Flexbox - Part 1_
 - [X] 6-4: _CSS Flexbox - Part 2_
 - [X] 6-5: _CSS Responsivo - Mobile First_
-- [X] 6-6: _[Projeto - Página inicial do Facebook]()_ <!-- PR: -->
+- [X] 6-6: _[Projeto - Página inicial do Facebook](https://github.com/lucasmartins96/facebook-signup)_ <!-- PR: https://github.com/tryber/sd-010-b-project-facebook-signup/pull/87 -->
 
 ##### Bloco 7: JavaScript ES6 & Testes Unitários
 
 - [X] 7-1: _JavaScript ES6 - let, const, arrow functions e template literals_
 - [X] 7-2: _JavaScript ES6 - Objects_
 - [X] 7-3: _Testes unitários em JavaScript_
-- [X] 7-4: _[Projeto - JavaScript Testes Unitários]()_ <!-- PR: -->
+- [X] 7-4: _[Projeto - JavaScript Testes Unitários](https://github.com/lucasmartins96/js-unit-tests)_ <!-- PR: https://github.com/tryber/sd-010-b-project-js-unit-tests/pull/97 -->
 
 ##### Bloco 8: JavaScript ES6
 
@@ -68,76 +68,76 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [X] 8-2: _JavaScript ES6 - Higher Order Functions - map e filter_
 - [X] 8-3: _JavaScript ES6 - Higher Order Functions - reduce_
 - [X] 8-4: _JavaScript ES6 - spread operator, rest parameter, destructuring e mais_
-- [X] 8-5: _[Projeto - Zoo functions]()_ <!-- PR: -->
+- [X] 8-5: _[Projeto - Zoo functions](https://github.com/lucasmartins96/zoo-functions)_ <!-- PR: https://github.com/tryber/sd-010-b-project-zoo-functions/pull/88 -->
 
 ##### Bloco 9: Assincronicidade & Callbacks
 
 - [X] 9-1: _JavaScript Assíncrono e Callbacks_
 - [X] 9-2: _JavaScript Promises_
-- [X] 9-3: _[Projeto - Carrinho de Compras]()_ <!-- PR: -->
+- [X] 9-3: _[Projeto - Carrinho de Compras](https://github.com/lucasmartins96/shopping-cart)_ <!-- PR: https://github.com/tryber/sd-010-b-project-shopping-cart/pull/31 -->
 
 ##### Bloco 10: Jest
 
 - [X] 10-1: _Primeiros passos no Jest_
 - [X] 10-2: _Jest - Testes Assíncronos_
 - [X] 10-3: _Jest - Simulando comportamentos_
-- [X] 10-4: _[Projeto - Jest Assíncrono e Mocking]()_ <!-- PR: -->
+- [X] 10-4: _[Projeto - Jest Assíncrono e Mocking](https://github.com/lucasmartins96/project-jest)_ <!-- PR: https://github.com/tryber/sd-010-b-project-jest/pull/33 -->
 
-## Desenvolvimento Front-end :hourglass_flowing_sand:
+## Desenvolvimento Front-end ✅
 
-##### Bloco 11: Introdução - React
+##### Bloco 11: Introdução à React
 
 - [X] 11-1: _'Hello, world!' no React!_
 - [X] 11-2: _Componentes React_
-- [ ] 11-3: _[Projeto - Movie Cards Library]()_ <!-- PR: -->
+- [X] 11-3: _[Projeto - Movie Cards Library](https://github.com/lucasmartins96/movie-cards-library)_ <!-- PR: https://github.com/tryber/sd-010-b-project-movie-cards-library/pull/70 -->
 
-##### Bloco 12: React
+##### Bloco 12: Componentes com Estado, Eventos e Formulários com React
 
-- [ ] 12-1: _Components com estado_
-- [ ] 12-2: _Eventos e formulários no React_
-- [ ] 12-3: _[Projeto - Movie Cards Library Stateful]()_ <!-- PR: -->
+- [X] 12-1: _Components com estado_
+- [X] 12-2: _Eventos e formulários no React_
+- [X] 12-3: _[Projeto - Movie Cards Library Stateful](https://github.com/lucasmartins96/movie-cards-library-stateful)_ <!-- PR: https://github.com/tryber/sd-010-b-project-movie-cards-library-stateful/pull/16 -->
 
-##### Bloco 13: React
+##### Bloco 13: Ciclo de Vida de Componentes e React Router
 
-- [ ] 13-1: _Melhorando o reuso de componentes: props.children e PropTypes_
-- [ ] 13-2: _Ciclo de vida de componentes em React_
-- [ ] 13-3: _React Router_
-- [ ] 13-4: _[Projeto - Movie Cards Library CRUD]()_ <!-- PR: -->
+- [X] 13-1: _Melhorando o reuso de componentes: props.children e PropTypes_
+- [X] 13-2: _Ciclo de vida de componentes em React_
+- [X] 13-3: _React Router_
+- [X] 13-4: _[Projeto - Movie Cards Library CRUD](https://github.com/lucasmartins96/movie-cards-library-crud)_ <!-- PR: https://github.com/tryber/sd-010-b-project-movie-card-library-crud/pull/35 -->
 
 ##### Bloco 14: Metodologias ágeis
 
-- [ ] 14-1: _Metodologias ágeis_
-- [ ] 14-2: _[Projeto - Frontend Online Store]()_ <!-- PR: -->
+- [X] 14-1: _Metodologias ágeis_
+- [X] 14-2: _[Projeto - Frontend Online Store](https://github.com/lucasmartins96/frontend-online-store)_ <!-- PR: https://github.com/tryber/sd-010-b-project-frontend-online-store/pull/457 -->
 
-##### Bloco 15: Testes em React
+##### Bloco 15: Testes automatizados com React Testing Library
 
-- [ ] 15-1: _Testando React com a React Testing Library_
-- [ ] 15-2: _Testando React com a React Testing Library - Parte 2_
-- [ ] 15-3: _[Projeto - Testes em React]()_ <!-- PR: -->
+- [X] 15-1: _Testando React com a React Testing Library_
+- [X] 15-2: _Testando React com a React Testing Library - Parte 2_
+- [X] 15-3: _[Projeto - Testes em React](https://github.com/lucasmartins96/rtl)_ <!-- PR: https://github.com/tryber/sd-010-b-project-react-testing-library/pull/35 -->
 
-##### Bloco 16: Introdução ao Redux
+##### Bloco 16: Gerenciamento de estado com Redux
 
-- [ ] 16-1: _Introdução ao Redux_
-- [ ] 16-2: _React com Redux - Parte 1_
-- [ ] 16-3: _React com Redux - Prática_
-- [ ] 16-4: _React com Redux - Parte 2_
-- [ ] 16-5: _Testes síncronos com React-Redux_
-- [ ] 16-6: _[Projeto - Tabela com filtros de dados]()_ <!-- PR: -->
+- [X] 16-1: _Introdução ao Redux_
+- [X] 16-2: _React com Redux - Parte 1_
+- [X] 16-3: _React com Redux - Prática_
+- [X] 16-4: _React com Redux - Parte 2_
+- [X] 16-5: _Testes síncronos com React-Redux_
+- [X] 16-6: _[Projeto - Trybe Wallet](https://github.com/lucasmartins96/trybe-wallet)_ <!-- PR: https://github.com/tryber/sd-010-b-project-trybewallet/pull/47 -->
 
-##### Bloco 17: Projeto React
+##### Bloco 17: Projeto Jogo de Trivia
 
-- [ ] 17-1: _[Projeto - Jogo de Trivia]()_ <!-- PR: -->
+- [X] 17-1: _[Projeto - Jogo de Trivia](https://github.com/lucasmartins96/trivia-react-redux)_ <!-- PR: https://github.com/tryber/sd-010-b-project-trivia-react-redux/pull/640 -->
 
-##### Bloco 18: React & Context API
+##### Bloco 18: Context API e React Hooks
 
-- [ ] 18-1: _Context API do React_
-- [ ] 18-2: _React Hooks - useState e useContext_
-- [ ] 18-3: _React Hooks - useEffect e Hooks customizados_
-- [ ] 18-4: _[Projeto - StarWars Datatable com Context API e Hooks]()_ <!-- PR: -->
+- [X] 18-1: _Context API do React_
+- [X] 18-2: _React Hooks - useState e useContext_
+- [X] 18-3: _React Hooks - useEffect e Hooks customizados_
+- [X] 18-4: _[Projeto - StarWars Datatable com Context API e Hooks](https://github.com/lucasmartins96/starwars-planets-search)_ <!-- PR: https://github.com/tryber/sd-010-b-project-starwars-planets-search/pull/28 -->
 
-##### Bloco 19: Projeto Final de Front-end
+##### Bloco 19: Projeto App de Receitas
 
-- [ ] 19-1: _[Projeto - App de Receitas]()_ <!-- PR: -->
+- [X] 19-1: _[Projeto - App de Receitas]()_ <!-- PR: https://github.com/tryber/sd-010-b-project-recipes-app/pull/98 -->
 
 ## Desenvolvimento Back-end :hourglass_flowing_sand:
 
