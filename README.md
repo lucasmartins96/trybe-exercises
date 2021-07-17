@@ -8,33 +8,33 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 ## Fundamentos do Desenvolvimento Web ✅
 
-##### Bloco 1: Introdução - Unix & Shell
+##### Bloco 1: Introdução - Unix & Bash
 
 - [X] 1-3: _Unix & Bash - Part 1_
 - [X] 1-4: _Unix & Bash - Part 2_
 - [X] 1-5: _Shell Script_
 
-##### Bloco 2: Git & GitHub
+##### Bloco 2: Git, GitHub e Internet
 
 - [X] 2-1: _O que é e para que serve?_
 - [X] 2-2: _Entendendo os comandos_
 - [X] 2-3: _Internet - Entendendo como ela funciona_
 
-##### Bloco 3: Introdução - HTML & CSS
+##### Bloco 3: Introdução à HTML e CSS
 
 - [X] 3-1: _HTML & CSS - Estruturas de página_
 - [X] 3-2: _HTML & CSS - Primeiros passos em CSS_
 - [X] 3-3: _HTML & CSS - Seletores e posicionamento_
 - [X] 3-4: _HTML Semântico_
 - [X] 3-5: _[Projeto - HTML & CSS](https://github.com/lucasmartins96/lessons-learned)_ <!-- PR: https://github.com/tryber/sd-010-b-project-lessons-learned/pull/53 -->
-##### Bloco 4: Introdução - JavaScript
+##### Bloco 4: Introdução à JavaScript e Lógica de Programação
 
 - [X] 4-1: _JavaScript - Primeiros passos_
 - [X] 4-2: _JavaScript - Array e loop For_
 - [X] 4-3: _JavaScript - Lógica de Programação e Algoritmos_
 - [X] 4-4: _JavaScript - Objetos e funções_
 - [x] 4-5: _[Projeto - Playground Functions](https://github.com/lucasmartins96/playground-functions)_ <!-- PR: https://github.com/tryber/sd-010-b-project-playground-functions/pull/57 -->
-##### Bloco 5: Introdução - JavaScript - Projetos
+##### Bloco 5: JavaScript: DOM, Eventos e Web Storage
 
 - [X] 5-1: _JavaScript - DOM e seletores_
 - [X] 5-2: _JavaScript - Trabalhando com elementos_
@@ -46,7 +46,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [X] 5-7: _[Projeto - Adivinhe a Cor](https://github.com/lucasmartins96/color-guess)_ <!-- PR: https://github.com/tryber/sd-010-b-project-color-guess/pull/12 -->
 - [X] 5-7: _[Projeto - Carta Misteriosa](https://github.com/lucasmartins96/mistery-letter)_ <!-- PR: https://github.com/tryber/sd-010-b-project-mistery-letter/pull/10 -->
 
-##### Bloco 6: HTML & CSS avançado
+##### Bloco 6: HTML e CSS: Forms, Flexbox e Responsivo
 
 - [X] 6-1: _HTML & CSS - Forms_
 - [X] 6-2: _Bibliotecas JavaScript e Frameworks CSS_
@@ -55,14 +55,14 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [X] 6-5: _CSS Responsivo - Mobile First_
 - [X] 6-6: _[Projeto - Página inicial do Facebook](https://github.com/lucasmartins96/facebook-signup)_ <!-- PR: https://github.com/tryber/sd-010-b-project-facebook-signup/pull/87 -->
 
-##### Bloco 7: JavaScript ES6 & Testes Unitários
+##### Bloco 7: Introdução à JavaScript ES6 e Testes Unitários
 
 - [X] 7-1: _JavaScript ES6 - let, const, arrow functions e template literals_
 - [X] 7-2: _JavaScript ES6 - Objects_
 - [X] 7-3: _Testes unitários em JavaScript_
 - [X] 7-4: _[Projeto - JavaScript Testes Unitários](https://github.com/lucasmartins96/js-unit-tests)_ <!-- PR: https://github.com/tryber/sd-010-b-project-js-unit-tests/pull/97 -->
 
-##### Bloco 8: JavaScript ES6
+##### Bloco 8: Higher Order Functions do JavaScript ES6
 
 - [X] 8-1: _JavaScript ES6 - Higher Order Functions - forEach, find, some, every, sort_
 - [X] 8-2: _JavaScript ES6 - Higher Order Functions - map e filter_
@@ -70,13 +70,13 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [X] 8-4: _JavaScript ES6 - spread operator, rest parameter, destructuring e mais_
 - [X] 8-5: _[Projeto - Zoo functions](https://github.com/lucasmartins96/zoo-functions)_ <!-- PR: https://github.com/tryber/sd-010-b-project-zoo-functions/pull/88 -->
 
-##### Bloco 9: Assincronicidade & Callbacks
+##### Bloco 9: JavaScript Assíncrono e Promises
 
 - [X] 9-1: _JavaScript Assíncrono e Callbacks_
 - [X] 9-2: _JavaScript Promises_
 - [X] 9-3: _[Projeto - Carrinho de Compras](https://github.com/lucasmartins96/shopping-cart)_ <!-- PR: https://github.com/tryber/sd-010-b-project-shopping-cart/pull/31 -->
 
-##### Bloco 10: Jest
+##### Bloco 10: Testes automatizados com Jest
 
 - [X] 10-1: _Primeiros passos no Jest_
 - [X] 10-2: _Jest - Testes Assíncronos_
@@ -104,7 +104,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [X] 13-3: _React Router_
 - [X] 13-4: _[Projeto - Movie Cards Library CRUD](https://github.com/lucasmartins96/movie-cards-library-crud)_ <!-- PR: https://github.com/tryber/sd-010-b-project-movie-card-library-crud/pull/35 -->
 
-##### Bloco 14: Metodologias ágeis
+##### Bloco 14: Metodologias Ágeis
 
 - [X] 14-1: _Metodologias ágeis_
 - [X] 14-2: _[Projeto - Frontend Online Store](https://github.com/lucasmartins96/frontend-online-store)_ <!-- PR: https://github.com/tryber/sd-010-b-project-frontend-online-store/pull/457 -->
