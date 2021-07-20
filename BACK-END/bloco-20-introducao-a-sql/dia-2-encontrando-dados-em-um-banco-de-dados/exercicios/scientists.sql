@@ -1,3 +1,5 @@
+-- Esse banco de dados é de uso livre, sendo licenciado de acordo com os termos https://creativecommons.org/licenses/by-sa/3.0/
+
 DROP SCHEMA IF EXISTS Scientists;
 CREATE SCHEMA Scientists;
 USE Scientists;
