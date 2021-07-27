@@ -14,13 +14,13 @@ SELECT
 FROM
     sakila.customer c
 WHERE
-    c.first_name LIKE ('%tracy%') 
+    c.first_name LIKE '%tracy%' 
 UNION SELECT 
     a.first_name
 FROM
     sakila.actor a
 WHERE
-    a.first_name LIKE ('%je%');
+    a.first_name LIKE '%je%';
 
 # 3. Monte uma query que exiba a união dos cinco últimos nomes da tabela actor, o primeiro nome da tabela staff e cinco nomes a partir da 15ª posição da tabela customer. Não permita que dados repetidos sejam exibidos. Ordene os resultados em ordem alfabética.
 (SELECT 
@@ -41,10 +41,13 @@ LIMIT 5 OFFSET 15) ORDER BY first_name;
 
 # 4. Você quer exibir uma lista paginada com os nomes e sobrenomes de todos os clientes e atores do banco de dados, em ordem alfabética. Considere que a paginação está sendo feita de 15 em 15 resultados e que você está na 4ª página. Monte uma query que simule esse cenário.
 (SELECT 
-    first_name
+    first_name, last_name
 FROM
-    sakila.customer) UNION ALL (SELECT 
-    first_name
+    sakila.customer
+ORDER BY first_name , last_name
+LIMIT 60) UNION (SELECT 
+    first_name, last_name
 FROM
-    sakila.actor) ORDER BY first_name
-    LIMIT 15 OFFSET 45;
+    sakila.actor
+ORDER BY first_name , last_name
+LIMIT 60) ORDER BY first_name , last_name LIMIT 15 OFFSET 45;
