@@ -105,3 +105,4 @@ SELECT UCASE(FIRST_NAME) FROM hr.employees;
 SELECT * FROM hr.employees e WHERE DATE(HIRE_DATE) BETWEEN '1987-07-01' AND '1987-07-31';
 
 -- 18: Escreva uma query que exiba as seguintes informações de cada funcionário: nome, sobrenome, tempo que trabalha na empresa (em dias).
+SELECT e.FIRST_NAME, e.LAST_NAME, DATEDIFF(CURRENT_DATE(), e.HIRE_DATE) 'TEMPO_NA_EMPRESA (dias)' FROM hr.employees e;
