@@ -20,13 +20,12 @@ WHERE
 
 -- Exercício 3: Utilizando o INNER JOIN, faça uma busca que retorne os filmes e sua avaliação (rating) em ordem decrescente.
 SELECT 
-    mov.title 'Nome do filme',
-    box.rating
+    mov.title 'Nome do filme', box.rating
 FROM
     Pixar.BoxOffice box
         INNER JOIN
     Pixar.Movies mov ON box.movie_id = mov.id
-    ORDER BY mov.title DESC, box.rating DESC;
+ORDER BY mov.title DESC , box.rating DESC;
 
 -- Exercício 4: Utilizando o LEFT JOIN, faça uma busca que retorne todos os dados dos cinemas, mesmo os que não possuem filmes em cartaz e, adicionalmente, os dados dos filmes que estão em cartaz nestes cinemas. Retorne os nomes dos cinemas em ordem alfabética.
 SELECT 
@@ -84,11 +83,11 @@ WHERE
 
 -- Exercício 7: Faça duas buscas, uma utilizando SUBQUERY e outra utilizando INNER JOIN, que retornem as avaliações dos filmes lançados depois de 2009.
 -- INNER JOIN
-SELECT
+SELECT 
     bo.rating
 FROM
     Pixar.Movies m
-        INNER JOIN 
+        INNER JOIN
     Pixar.BoxOffice bo ON m.id = bo.movie_id
 WHERE
     m.year > 2009;
