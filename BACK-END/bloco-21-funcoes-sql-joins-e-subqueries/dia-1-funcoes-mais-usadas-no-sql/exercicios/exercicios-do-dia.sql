@@ -87,22 +87,49 @@ WHERE
 SELECT * FROM hr.employees;
 
 -- 12. Escreva uma query que só exiba as informações dos funcionários cujo o primeiro nome tenha oito ou mais caracteres.
-SELECT * FROM hr.employees e WHERE LENGTH(FIRST_NAME) >= 8;
+SELECT 
+    *
+FROM
+    hr.employees e
+WHERE
+    LENGTH(FIRST_NAME) >= 8;
 
 -- 13. Escreva uma query que exiba as seguintes informações de cada funcionário: id, primeiro nome e ano no qual foi contratado (exiba somente o ano).
-SELECT EMPLOYEE_ID, FIRST_NAME, YEAR(HIRE_DATE) FROM hr.employees;
+SELECT 
+    EMPLOYEE_ID, FIRST_NAME, YEAR(HIRE_DATE)
+FROM
+    hr.employees;
 
 -- 14. Escreva uma query que exiba as seguintes informações de cada funcionário: id, primeiro nome e dia do mês no qual foi contratado (exiba somente o dia).
-SELECT EMPLOYEE_ID, FIRST_NAME, DAY(HIRE_DATE) FROM hr.employees;
+SELECT 
+    EMPLOYEE_ID, FIRST_NAME, DAY(HIRE_DATE)
+FROM
+    hr.employees;
 
 -- 15. Escreva uma query que exiba as seguintes informações de cada funcionário: id , primeiro nome e mês no qual foi contratado (exiba somente o mês).
-SELECT EMPLOYEE_ID, FIRST_NAME, MONTH(HIRE_DATE) FROM hr.employees;
+SELECT 
+    EMPLOYEE_ID, FIRST_NAME, MONTH(HIRE_DATE)
+FROM
+    hr.employees;
 
 -- 16. Escreva uma query que exiba os nomes dos funcionários em letra maiúscula.
-SELECT UCASE(FIRST_NAME) FROM hr.employees;
+SELECT 
+    UCASE(FIRST_NAME)
+FROM
+    hr.employees;
 
 -- 17: Escreva uma query que exiba o sobrenome e a data de contratação de todos os funcionários contratados em julho de 1987.
-SELECT * FROM hr.employees e WHERE DATE(HIRE_DATE) BETWEEN '1987-07-01' AND '1987-07-31';
+SELECT 
+    *
+FROM
+    hr.employees e
+WHERE
+    DATE(HIRE_DATE) BETWEEN '1987-07-01' AND '1987-07-31';
 
 -- 18: Escreva uma query que exiba as seguintes informações de cada funcionário: nome, sobrenome, tempo que trabalha na empresa (em dias).
-SELECT e.FIRST_NAME, e.LAST_NAME, DATEDIFF(CURRENT_DATE(), e.HIRE_DATE) 'TEMPO_NA_EMPRESA (dias)' FROM hr.employees e;
+SELECT 
+    e.FIRST_NAME,
+    e.LAST_NAME,
+    DATEDIFF(CURRENT_DATE(), e.HIRE_DATE) 'TEMPO NA EMPRESA (dias)'
+FROM
+    hr.employees e;
