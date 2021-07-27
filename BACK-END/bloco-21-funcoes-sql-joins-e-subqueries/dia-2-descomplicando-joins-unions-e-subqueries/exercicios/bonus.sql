@@ -1,4 +1,4 @@
-# Exercício 10: Utilizando o INNER JOIN, selecione todas as informações dos filmes com avaliação maior que 8.
+-- Exercício 10: Utilizando o INNER JOIN, selecione todas as informações dos filmes com avaliação maior que 8.
 SELECT 
     mov.title,
     mov.director,
@@ -14,7 +14,7 @@ FROM
 WHERE
     box.rating > 8;
 
-# Exercício 11: Utilizando o SELF JOIN, selecione os títulos e duração dos filmes que possuem o mesmo diretor.
+-- Exercício 11: Utilizando o SELF JOIN, selecione os títulos e duração dos filmes que possuem o mesmo diretor.
 SELECT 
     mov1.title,
     mov1.length_minutes,
@@ -26,5 +26,45 @@ FROM
 WHERE
     mov1.director = mov2.director;
 
-# Exercício 12: Faça duas buscas, uma utilizando SUBQUERY e outra utilizando INNER JOIN , que retornem o título dos filmes que arrecadaram 500 milhões ou mais, e que possuem duração maior que 110 minutos.
+-- Exercício 12: Faça duas buscas, uma utilizando SUBQUERY e outra utilizando INNER JOIN, que retornem o título dos filmes que arrecadaram 500 milhões ou mais, e que possuem duração maior que 110 minutos.
+-- INNER JOIN
+SELECT 
+    m.title
+FROM
+    Pixar.BoxOffice bo
+        INNER JOIN
+    Pixar.Movies m ON m.id = bo.movie_id
+WHERE
+    (bo.domestic_sales > 500000000
+        OR bo.international_sales > 500000000)
+        AND m.length_minutes > 110;
 
+-- SUBQUERY
+-- 1
+SELECT 
+    m.title
+FROM
+    Pixar.Movies m
+WHERE
+    m.id IN (SELECT 
+            bo.movie_id
+        FROM
+            Pixar.BoxOffice bo
+        WHERE
+            bo.domestic_sales > 500000000
+                OR bo.international_sales > 500000000)
+        AND m.length_minutes > 110;
+-- 2
+SELECT 
+    (SELECT 
+            title
+        FROM
+            Pixar.Movies
+        WHERE
+            length_minutes > 110
+                AND id = bo.movie_id) filme
+FROM
+    Pixar.BoxOffice bo
+WHERE
+    (bo.domestic_sales > 500000000
+        OR bo.international_sales > 500000000);
