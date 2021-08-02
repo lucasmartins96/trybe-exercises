@@ -38,7 +38,14 @@ Os resultados devem ser ordenados pelo nome das cidades. Use a imagem abaixo com
 USE sakila;
 
 CREATE VIEW address_info AS
-SELECT a.address_id, a.address, a.district, c.city_id, c.city FROM `address` a INNER JOIN city c ON c.city_id = a.city_id
+SELECT  a.address_id
+       ,a.address
+       ,a.district
+       ,c.city_id
+       ,c.city
+FROM `address` a
+INNER JOIN city c
+ON c.city_id = a.city_id
 ORDER BY c.city;
 
 SELECT * FROM address_info;
@@ -48,6 +55,11 @@ Sua view deve exibir o título do filme, o id do idioma e o idioma do filme, com
 USE sakila;
 
 CREATE VIEW movies_languages AS
-SELECT f.title, f.language_id, l.name FROM film f INNER JOIN `language` l ON l.language_id = f.language_id;
+SELECT  f.title
+       ,f.language_id
+       ,l.name
+FROM film f
+INNER JOIN `language` l
+ON l.language_id = f.language_id;
 
 SELECT * FROM movies_languages;
