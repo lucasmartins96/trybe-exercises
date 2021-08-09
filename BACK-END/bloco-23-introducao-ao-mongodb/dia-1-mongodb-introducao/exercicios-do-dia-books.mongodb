@@ -3,3 +3,5 @@ use('users')
 // Exercício 7 : Retorne a quantidade de documentos da coleção books.
 db.books.count();
 
+// Exercício 8 : Conte quantos livros existem com o status = "PUBLISH".
+db.books.count({ status: "PUBLISH"})
