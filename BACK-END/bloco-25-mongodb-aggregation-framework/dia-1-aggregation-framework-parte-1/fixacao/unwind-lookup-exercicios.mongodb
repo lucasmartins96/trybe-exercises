@@ -1,0 +1,39 @@
+use('agg_example');
+
+// Selecione todos os clientes com as suas respectivas transações feitas
+db.clients.aggregate([
+  {
+    $lookup: {
+      from: 'transactions',
+      localField: 'name',
+      foreignField: 'from',
+      as: 'transactionsPerformed'
+    }
+  }
+]);
+
+// Selecione quatro clientes com as suas respectivas transações recebidas
+db.clients.aggregate([
+  {
+    $lookup: {
+      from: 'transactions',
+      localField: 'name',
+      foreignField: 'to',
+      as: 'transactionsReceived'
+    }
+  },
+  { $limit: 4 }
+]);
+
+// Selecione todos os clientes do estado da "Florida" e suas respectivas transações recebidas
+db.clients.aggregate([
+  { $match: { State: "Florida" } },
+  {
+    $lookup: {
+      from: 'transactions',
+      localField: 'name',
+      foreignField: 'to',
+      as: 'transactionsReceived'
+    }
+  }
+]);

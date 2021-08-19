@@ -1,0 +1,47 @@
+// Utilizando o banco de dados agg_example e a coleção transactions, faça os exercícios:
+use('agg_example');
+
+// Selecione todos os bancos, ou seja, valores do campo bank
+db.transactions.aggregate([
+  {
+    $project: {
+      _id: 0,
+      bank: 1,
+    }
+  }
+]);
+
+// Selecione o valor total das transações em cada banco e quantas são
+db.transactions.aggregate([
+  {
+    $group: {
+      _id: "$bank",
+      count: { $sum: 1 }
+    }
+  }
+]);
+
+// Selecione o valor total de transações;
+db.transactions.aggregate([
+  {
+    $group: {
+      _id: null,
+      count: { $sum: 1 }
+    }
+  }
+]);
+
+// Selecione os bancos que têm o valor total de transações maior que 1000.
+db.transactions.aggregate([
+  {
+    $group: {
+      _id: "$bank",
+      valueTransactions: {
+        $sum: "$value",
+      }
+    }
+  },
+  {
+    $match: { valueTransactions: { $gte: 1000 } }
+  }
+]);
