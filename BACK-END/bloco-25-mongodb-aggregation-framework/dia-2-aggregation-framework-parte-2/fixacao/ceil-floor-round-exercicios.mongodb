@@ -1,0 +1,27 @@
+// Retorne o menor número inteiro relativo ao preço de venda de cada produto;
+use ('storage');
+db.products.aggregate([{
+  $project: { _id: 0, sale_price: 1, floorValue: { $floor: "$sale_price" } }
+}]);
+
+//Retorne o maior número inteiro relativo ao lucro total sobre cada produto.
+use ('storage');
+db.products.aggregate([{
+  $project: {
+    _id: 0,
+    lucro_total: {
+      $subtract: [
+        "$sale_price",
+        { $add: ["$purchase_price", "$taxes"] }
+      ]
+    },
+    ceilLucroTotal: {
+      $ceil: {
+        $subtract: [
+          "$sale_price",
+          { $add: ["$purchase_price", "$taxes"] }
+        ]
+      } 
+    } 
+  }
+}]);

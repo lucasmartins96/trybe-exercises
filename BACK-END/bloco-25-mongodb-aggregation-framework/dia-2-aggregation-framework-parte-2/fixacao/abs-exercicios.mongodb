@@ -1,0 +1,16 @@
+// Calcule o valor absoluto do lucro total de cada produto.
+use ('storage');
+db.products.aggregate([{
+  $project: {
+    _id: 0,
+    name: 1,
+    lucro_total: {
+      $abs: {
+        $subtract: [
+          { $add: ["$purchase_price", "$taxes"] },
+          "$sale_price"
+        ]
+      }
+    }
+  }
+}]);
