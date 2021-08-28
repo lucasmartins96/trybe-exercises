@@ -1,6 +1,6 @@
 const express = require('express');
 const bodyParser = require('body-parser');
-const { getSimpsonsData } = require('./file-management');
+const { getSimpsonsData, updateSimpsonsData } = require('./file-management');
 
 const app = express();
 app.use(bodyParser.json());
@@ -31,6 +31,33 @@ app.get('/simpsons/:id', async (req, res) => {
   }
 
   res.status(200).json(foundSimpson);
+});
+
+app.post('/simpsons', async (req, res) => {
+  const { id, name } = req.body;
+  let simpsons = [];
+  try {
+    const simpsonsData = await getSimpsonsData();
+    simpsons.push(...simpsonsData);
+  } catch (error) {
+    return res.status(500).end();
+  }
+
+  const existsId = simpsons.some((simpson) => parseInt(simpson.id) === id);
+
+  if (existsId) {
+    return res.status(409).json({ message: 'id already exists' });
+  }
+
+  const newSimpsons = JSON.stringify([...simpsons, { id, name }]);
+
+  try {
+    await updateSimpsonsData(newSimpsons);
+    res.status(204).end();
+  } catch (error) {
+    res.status(500).json({ message: 'Erro ao adicionar o simpson!'});
+  }
+
 });
 
 app.listen(3002, () => {

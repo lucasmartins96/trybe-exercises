@@ -12,6 +12,17 @@ async function getSimpsonsData() {
   }
 }
 
+async function updateSimpsonsData(simpsonsData) {
+  try {
+    await fs.writeFile(SIMPSONS_JSON_PATH, simpsonsData);
+    console.log('Arquivo modificado com sucesso!');
+  } catch (error) {
+    console.error(`Não foi possível ler o arquivo ${SIMPSONS_JSON_PATH} \n Erro: ${error.message}`);
+    return rejects(error);
+  }
+}
+
 module.exports = {
   getSimpsonsData,
+  updateSimpsonsData,
 };
