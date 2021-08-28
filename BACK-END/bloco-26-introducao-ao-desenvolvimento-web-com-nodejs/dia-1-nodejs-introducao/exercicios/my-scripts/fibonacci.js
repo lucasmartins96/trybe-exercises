@@ -23,7 +23,7 @@ function calculaElemento (n) {
   return b;
 }
 
-function realizaCalculo() {
+function fibonacci() {
   const n = readline.questionInt('Digite o valor de n: ');
 
   if (n <= 0) {
@@ -36,4 +36,6 @@ function realizaCalculo() {
   calculaElemento(n - 2);
 }
 
-realizaCalculo();
+module.exports = {
+  fibonacci,
+};
