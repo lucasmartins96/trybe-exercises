@@ -13,6 +13,16 @@ app.post('/hello', (req, res) => {
   res.status(200).json({ message: `Hello, ${name}!`});
 });
 
+app.post('/greetings', (req, res) => {
+  const { name, age } = req.body;
+  
+  if (age < 18) {
+    return res.status(401).json({ "message": "Unauthorized" })
+  }
+
+  res.status(200).json({ "message": `Hello, ${name}!` })
+});
+
 app.listen(3001, () => {
   console.log('App listening on port 3001!');
 });
