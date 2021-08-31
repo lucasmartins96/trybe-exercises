@@ -1,7 +1,9 @@
 const express = require('express');
 const bodyParser = require('body-parser');
+const fetch = require('node-fetch');
 
 const PORT = 3001;
+const API_COINDESK = 'https://api.coindesk.com/v1/bpi/currentprice/BTC.json';
 const app = express();
 app.use(bodyParser.json());
 
@@ -63,6 +65,18 @@ function generateToken(length) {
   return token;
 }
 
+function validateToken(req, res, next) {
+  const token = req.headers.authorization;
+  const regexInvalidToken = /[^a-zA-Z0-9]+/
+  const isNotValidToken = regexInvalidToken.test(token) || token.length !== 12;
+
+  if (isNotValidToken) {
+    return res.status(401).json({ "message": "invalid token" });
+  }
+
+  next();
+}
+
 app.post(
   '/user/register',
   validateUsernameLength,
@@ -76,6 +90,11 @@ app.post(
 app.post('/user/login', validateEmail, validatePassword, (req, res) => {
   const token = generateToken(12);
   return res.status(201).json({ token });
+});
+
+app.get('/btc/price', validateToken, async (req, res) => {
+  const priceBTC = await fetch(API_COINDESK).then((resultAPI) => resultAPI.json());
+  res.json(priceBTC);
 });
 
 app.listen(PORT, () => { console.log(`App listening on port ${PORT}!`)});
