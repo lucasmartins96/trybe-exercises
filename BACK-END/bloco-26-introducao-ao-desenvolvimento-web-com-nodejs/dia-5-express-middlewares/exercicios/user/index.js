@@ -40,6 +40,29 @@ function validatePassword(req, res, next) {
   next();
 }
 
+function getRandomIntInclusive(min, max) {
+  min = Math.ceil(min);
+  max = Math.floor(max);
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+function generateToken(length) {
+  let token = '';
+  while (length > 0) {
+    const asciiCode = getRandomIntInclusive(48, 122);
+    // [0-9] --> ASCII [48-57]
+    // [A-Z] --> ASCII [65-90]
+    // [a-z] --> ASCII [97-122]
+    // [~] -> 58-64 || 91-96
+    if ((asciiCode < 58 || asciiCode > 64) && (asciiCode < 91 || asciiCode > 96)) {
+      const numberOrLetterString = String.fromCharCode(asciiCode);
+      token += numberOrLetterString;
+      length -= 1;
+    }
+  }
+  return token;
+}
+
 app.post(
   '/user/register',
   validateUsernameLength,
@@ -50,9 +73,9 @@ app.post(
   return res.status(201).json({ "message": "user created" });
 });
 
-app.post('/user/login', (req, res) => {
-  const { email, password } = req.body;
-  
+app.post('/user/login', validateEmail, validatePassword, (req, res) => {
+  const token = generateToken(12);
+  return res.status(201).json({ token });
 });
 
 app.listen(PORT, () => { console.log(`App listening on port ${PORT}!`)});
