@@ -61,7 +61,7 @@ function validatePassword(req, res, next) {
   next();
 }
 
-function validationId(req, res, next) {
+function validateId(req, res, next) {
   const { id } = req.params;
 
   if (!ObjectId.isValid(id)) {
@@ -78,5 +78,5 @@ module.exports = {
   validateLastName,
   validateEmail,
   validatePassword,
-  validationId,
+  validateId,
 };
