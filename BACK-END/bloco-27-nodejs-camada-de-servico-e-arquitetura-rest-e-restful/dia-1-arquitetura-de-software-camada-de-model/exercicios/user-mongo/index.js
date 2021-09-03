@@ -5,7 +5,7 @@ const {
   validateLastName,
   validateEmail,
   validatePassword,
-  validationId,
+  validateId,
 } = require('./middlewares/validations');
 
 const OK_STATUS = 200;
@@ -27,7 +27,7 @@ app.post(
   }
 );
 
-app.get('/user/:id', validationId, async (req, res) => {
+app.get('/user/:id', validateId, async (req, res) => {
   const { id } = req.params;
 
   const userFound = await User.findById(id);
@@ -44,6 +44,23 @@ app.get('/user', async (req, res) => {
   const users = await User.getAll();
   return res.status(OK_STATUS).json(users);
 });
+
+app.put(
+  '/user/:id',
+  validateFirstName,
+  validateLastName,
+  validateEmail,
+  validatePassword,
+  validateId,
+  async (req, res) => {
+    const { id } = req.params;
+    const { firstName, lastName, email, password } = req.body;
+    const newData = { firstName, lastName, email, password };
+    const userUpdated = await User.update(id, newData);
+
+    return res.status(OK_STATUS).json(userUpdated);
+  }
+);
 
 app.listen(3000, () => {
   console.log('App listening on port 3000!');
