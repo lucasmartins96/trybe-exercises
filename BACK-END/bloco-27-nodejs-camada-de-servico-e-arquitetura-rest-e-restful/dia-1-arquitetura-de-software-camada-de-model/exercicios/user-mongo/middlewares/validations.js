@@ -1,3 +1,5 @@
+const { ObjectId } = require('mongodb');
+
 const BAD_REQUEST_STATUS = 400;
 
 function validateFirstName(req, res, next) {
@@ -59,9 +61,22 @@ function validatePassword(req, res, next) {
   next();
 }
 
+function validationId(req, res, next) {
+  const { id } = req.params;
+
+  if (!ObjectId.isValid(id)) {
+    return res.status(BAD_REQUEST_STATUS).json({
+      error: true,
+      message: 'id inválido',
+    });
+  }
+  next();
+}
+
 module.exports = {
   validateFirstName,
   validateLastName,
   validateEmail,
   validatePassword,
+  validationId,
 };
