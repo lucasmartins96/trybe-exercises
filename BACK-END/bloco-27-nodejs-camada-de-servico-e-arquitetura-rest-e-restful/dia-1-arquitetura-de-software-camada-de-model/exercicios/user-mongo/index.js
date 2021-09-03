@@ -5,13 +5,14 @@ const {
   validateLastName,
   validateEmail,
   validatePassword,
+  validationId,
 } = require('./middlewares/validations');
 
 const OK_STATUS = 200;
 const CREATED_STATUS = 201;
+const NOT_FOUND_STATUS = 404;
 const app = express();
 app.use(express.json());
-
 
 app.post(
   '/user',
@@ -25,6 +26,19 @@ app.post(
     return res.status(CREATED_STATUS).json(userInserted);
   }
 );
+
+app.get('/user/:id', validationId, async (req, res) => {
+  const { id } = req.params;
+
+  const userFound = await User.findById(id);
+  if (!userFound) {
+    return res.status(NOT_FOUND_STATUS).json({
+      error: true,
+      message: 'Usuário não encontrado',
+    });
+  }
+  return res.status(OK_STATUS).json(userFound);
+});
 
 app.get('/user', async (req, res) => {
   const users = await User.getAll();
