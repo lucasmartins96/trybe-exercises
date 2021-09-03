@@ -39,8 +39,23 @@ const findById = async (id) => {
   return userData;
 };
 
+const update = async (id, { firstName, lastName, email, password }) => {
+  const db = await connection();
+  const userId = new ObjectId(id);
+  const newData = { firstName, lastName, email, password };
+  await db.collection(collectionUsers).updateOne({ _id: userId }, { $set: newData });
+
+  return {
+    id: userId,
+    firstName,
+    lastName,
+    email,
+  };
+};
+
 module.exports = {
   create,
   getAll,
   findById,
+  update,
 };
