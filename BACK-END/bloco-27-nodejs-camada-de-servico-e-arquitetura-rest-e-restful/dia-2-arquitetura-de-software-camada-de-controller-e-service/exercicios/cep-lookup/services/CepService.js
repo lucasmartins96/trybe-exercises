@@ -10,7 +10,7 @@ const findCep = async (cep) => {
   }
 
   const cepFound = (await CepModel.findCep(cep)) || (await ViaCepModel.getCep(cep));
-  console.log(cepFound);
+
   if (!cepFound || cepFound.erro) {
     return { error: { code: 'notFound', message: 'CEP não encontrado' } };
   }

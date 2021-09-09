@@ -9,7 +9,7 @@ const findCep = async (req, res, next) => {
 
   if (cepFound.error) return next(cepFound.error);
 
-  // await CepService.create();
+  await CepService.create(cepFound);
 
   return res.status(OK_STATUS_CODE).json(cepFound);
 };
