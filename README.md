@@ -141,7 +141,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 ## Desenvolvimento Back-end :hourglass_flowing_sand:
 
-##### Bloco 20: Introdução - Bancos de dados relacionais
+##### Bloco 20: Introdução à SQL
 
 - [X] 20-1: _Banco de dados SQL_
 - [X] 20-2: _Encontrando dados em um banco de dados_
@@ -149,40 +149,40 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [X] 20-4: _Manipulando tabelas_
 - [X] 20-5: _[Projeto - All For One (Link PR)](https://github.com/tryber/sd-010-b-mysql-all-for-one/pull/20)_
 
-##### Bloco 21: Bancos de dados relacionais
+##### Bloco 21: Funções SQL, Joins e Subqueries
 
 - [X] 21-1: _Funções mais usadas no SQL_
 - [X] 21-2: _Descomplicando JOINs, UNIONs e Subqueries_
 - [X] 21-3: _Stored Routines & Stored Functions_
 - [X] 21-4: _[Projeto - Vocabulary Booster (Link PR)](https://github.com/tryber/sd-010-b-mysql-vocabulary-booster/pull/27)_
 
-##### Bloco 22: Bancos de dados relacionais
+##### Bloco 22: Normalização e Modelagem de Banco de Dados
 
 - [X] 22-1: _Transformando ideias em um modelo de banco de dados - Parte 1_
 - [X] 22-2: _Normalização, Formas Normais e Dumps_
 - [X] 22-2: _Transformando ideias em um modelo de banco de dados - Parte 2_
 - [X] 22-3: _[Projeto - One For All (Link PR)](https://github.com/tryber/sd-010-b-mysql-one-for-all/pull/16)_
 
-##### Bloco 23: Introdução - NoSQL
+##### Bloco 23: Introdução ao MongoDB
 
 - [X] 23-1: _MongoDB - Introdução_
 - [X] 23-2: _Filter Operators_
 - [X] 23-3: _[Projeto - Data Flights (Link PR)](https://github.com/tryber/sd-010-b-mongodb-dataflights/pull/37)_
 
-##### Bloco 24: Updates
+##### Bloco 24: MongoDB: Updates Simples e Complexos
 
 - [X] 24-1: _Updates Simples_
 - [X] 24-2: _Updates Complexos - Arrays - Parte 1_
 - [X] 24-3: _Updates Complexos - Arrays - Parte 2_
 - [X] 24-4: _[Projeto - Commerce (Link PR)](https://github.com/tryber/sd-010-b-mongodb-commerce/pull/34)_
 
-##### Bloco 25: Aggregation Framework
+##### Bloco 25: MongoDB: Aggregation Framework
 
 - [X] 25-1: _Aggregation Framework - Part 1_
 - [X] 25-2: _Aggregation Framework - Part 2_
 - [X] 25-3: _[Projeto - Aggregations (Link PR)](https://github.com/tryber/sd-010-b-mongodb-aggregations/pull/23)_
 
-##### Bloco 26: Intro - NodeJS
+##### Bloco 26: Introdução ao desenvolvimento Web com NodeJS
 
 - [X] 26-1: _NodeJS - Introdução_
 - [X] 26-2: _NodeJS - Fluxo Assíncrono_
@@ -191,7 +191,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [X] 26-5: _Express: Middlewares_
 - [X] 26-6: _[Projeto Talker Manager (Link PR)](https://github.com/tryber/sd-010-b-project-talker-manager/pull/29)_
 
-##### Bloco 27: NodeJS
+##### Bloco 27: NodeJS: Camada de Serviço e Arquitetura Rest e Restful
 
 - [X] 27-1: _Arquitetura de Software - Camada de Model_
 - [X] 27-2: _Arquitetura de Software - Camada de Controller e Service_
@@ -199,35 +199,37 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [X] 27-4: _Arquitetura de Software - Testando as Camadas_
 - [X] 27-5: _[Projeto - Store Manager](https://github.com/lucasmartins96/store-manager)_
 
-##### Bloco 28: NodeJS
+##### Bloco 28: Autenticação e Upload de Arquivos
 
-- [ ] 28-1: _Arquitetura de Software - Camada de Serviço_
-- [ ] 28-2: _Arquitetura web - Rest e Restful_
-- [ ] 28-3: _[Projeto - Cookmaster]()_
+- [ ] 28-1: _NodeJS - JWT - (JSON Web Token)_
+- [ ] 28-2: _NodeJS - Upload de arquivos com `multer`_
+- [ ] 28-3: _NodeJS - Testando APIs com Testes de Integração_
+- [ ] 28-4: _[Projeto - Cookmaster]()_
 
-##### Bloco 29: NodeJS
+##### Bloco 29: Deployment
 
-- [ ] 29-1: _NodeJS - JWT - (JSON Web Token)_
-- [ ] 29-2: _NodeJS - Upload de arquivos com Multer_
-- [ ] 29-3: _[Projeto - Cookmaster V2]()_
+- [ ] 29-1: _Infraestrutura - Deploy com Heroku_
+- [ ] 29-2: _Deploy - Gerenciadores de Processos_
+- [ ] 29-3: _[Projeto - Stranger Things]()_
 
-##### Bloco 30: Introdução - Deploy
+##### Bloco 30: Arquitetura: SOLID e ORM
 
-- [ ] 30-1: _Infraestrutura - Deploy com Heroku_
-- [ ] 30-2: _Deploy - Gerenciadores de Processos_
-- [ ] 30-3: _[Projeto - Stranger Things]()_
+- [ ] 30-1: _Arquitetura - Princípios SOLID_
+- [ ] 30-2: _ORM - Interface da aplicação com o banco de dados_
+- [ ] 30-3: _ORM - Associations_
+- [ ] 30-4: _[Projeto - API de Blogs]()_
 
-##### Bloco 31: Projeto
+##### Bloco 31: Sockets
 
-- [ ] 31-1: _[Projeto - Trybeer]()_
+- [ ] 31-1: _Arquitetura - Camada de View_
+- [ ] 31-2: _Sockets - TCP/UDP & NET_
+- [ ] 31-3: _Sockets - Socket.io_
+- [ ] 31-4: _Sockets - Praticando Socket.io_
+- [ ] 31-5: _[Projeto - Webchat]()_
 
-##### Bloco 32: Arquitetura de Software
+##### Bloco 32: Projeto - App de Delivery
 
-- [ ] 32-1: _Arquitetura - Princípios SOLID_
-- [ ] 32-2: _ORM - Interface da aplicação com o banco de dados_
-- [ ] 32-3: _Arquitetura de Software - DDD_
-- [ ] 32-4: _Boas práticas na escrita de testes_
-- [ ] 32-3: _[Projeto - API de Blogs]()_
+- [ ] 32-1: _[Projeto - API de Delivery]()_
 
 ##### Bloco 33: Sockets
 
