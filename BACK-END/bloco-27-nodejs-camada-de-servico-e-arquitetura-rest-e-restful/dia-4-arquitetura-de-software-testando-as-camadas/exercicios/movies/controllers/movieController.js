@@ -18,6 +18,18 @@ const create = async (req, res) => {
   res.status(201).json({ message: 'Filme criado com sucesso!' });
 };
 
+const findById = async (req, res) => {
+  const { id } = req.params;
+
+  const movie = await MovieService.findById(id);
+
+  if (!movie) {
+    return res.status(404).send('Filme não encontrado.');
+  }
+
+  res.status(200).json(movie);
+};
+
 module.exports = {
   getAll,
   create,
