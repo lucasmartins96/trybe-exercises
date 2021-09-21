@@ -1,16 +1,18 @@
 const Model = require('../models/user');
+const createToken = require('../services/createToken');
 
-module.exports = async (req, res) => {
+module.exports = async (req, res, next) => {
   try {
-    const username = await Model.registerUser(
+    const createdUser = await Model.registerUser(
       req.body.username,
       req.body.password
     );
-    if (!username) throw Error;
-    res.status(201).json({ message: 'Novo usuário criado com sucesso', user: username });
+    const { _id, username } = createdUser;
+    const token = createToken({ _id, username });
+
+    if (!createdUser) throw Error;
+    res.status(201).json({ message: 'Novo usuário criado com sucesso', user: createdUser, token });
   } catch (err) {
-    res
-      .status(500)
-      .json({ message: 'Erro ao salvar o usuário no banco', error: err });
+    next({ message: 'Erro ao salvar o usuário no banco' });
   }
 };
