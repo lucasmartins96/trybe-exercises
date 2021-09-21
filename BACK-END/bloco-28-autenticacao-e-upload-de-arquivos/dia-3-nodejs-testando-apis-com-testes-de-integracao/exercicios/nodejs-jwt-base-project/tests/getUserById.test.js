@@ -55,10 +55,8 @@ describe('GET /api/users/:userId', () => {
 
   describe('quando o parâmetro ID da requisição não é igual ao ID que está no token', () => {
     let response = {};
-    const VALID_TOKEN =
-      'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJfaWQiOiI1NDc1OWViM2MwOTBkODM0OTRlMmQ4MDQiLCJ1c2VybmFtZSI6ImphbmUiLCJhZG1pbiI6ZmFsc2V9.Mm6z7i8BI0OtUjNf3mcekZiiDoJV-Ex5B_-Cm_Gv2pI';
 
-    const INVALID_TOKEN =
+    const TOKEN =
       'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJfaWQiOiI2MTQ5MWVmNjliMWY2ZjJkZDUwZTRhMzgiLCJ1c2VybmFtZSI6Imx1Y2FzIG1hcnRpbnMiLCJhZG1pbiI6ZmFsc2V9.O3SzlkrK1iLptXNn66y4mROd1fL1eRLjGncNXYNGu9A';
     const DBServer = new MongoMemoryServer();
 
@@ -74,7 +72,7 @@ describe('GET /api/users/:userId', () => {
       response = await chai
         .request(server)
         .get('/api/users/:userId')
-        .set('authorization', INVALID_TOKEN)
+        .set('authorization', TOKEN)
         .send({
           userId: '54759eb3c090d83494e2d804',
         });
@@ -103,6 +101,50 @@ describe('GET /api/users/:userId', () => {
 
     it('a propriedade "message" possui o texto "Acesso negado"', () => {
       expect(response.body.error.message).to.be.equal('Acesso negado');
+    });
+  });
+
+  describe('quando o parâmetro ID da requisição é igual ao ID que está no token', () => {
+    let response = {};
+
+    const TOKEN =
+      'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJfaWQiOiI2MTQ5MWVmNjliMWY2ZjJkZDUwZTRhMzgiLCJ1c2VybmFtZSI6Imx1Y2FzIG1hcnRpbnMiLCJhZG1pbiI6ZmFsc2V9.O3SzlkrK1iLptXNn66y4mROd1fL1eRLjGncNXYNGu9A';
+    const DBServer = new MongoMemoryServer();
+
+    before(async () => {
+      const URLMock = await DBServer.getUri();
+      const connectionMock = await MongoClient.connect(URLMock, {
+        useNewUrlParser: true,
+        useUnifiedTopology: true,
+      });
+
+      sinon.stub(MongoClient, 'connect').resolves(connectionMock);
+
+      response = await chai
+        .request(server)
+        .get('/api/users/61491ef69b1f6f2dd50e4a38')
+        .set('authorization', TOKEN);
+    });
+
+    after(async () => {
+      MongoClient.connect.restore();
+      await DBServer.stop();
+    });
+
+    it('retorna o código de status 200', () => {
+      expect(response).to.have.status(200);
+    });
+
+    it('retorna um objeto', () => {
+      expect(response.body).to.be.a('object');
+    });
+
+    it('o objeto possui a propriedade "username"', () => {
+      expect(response.body).to.have.property('username');
+    });
+
+    it('o objeto possui a propriedade "admin"', () => {
+      expect(response.body).to.have.property('admin');
     });
   });
 });
