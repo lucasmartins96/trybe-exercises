@@ -14,8 +14,8 @@ const findUser = async (username) =>
 
 const findUserById = async (id) => {
   const db = await connect();
-  const { result } = db.collection('users').findOne({ _id: ObjectId(id)});
+  const result = await db.collection('users').findOne(ObjectID(id));
   return result;
-}
+};
 
 module.exports = { registerUser, findUser, findUserById };

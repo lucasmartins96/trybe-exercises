@@ -1,9 +1,10 @@
 // validateJWT.js
 const jwt = require('jwt-simple');
+const userModel = require('../models/user');
 
 const { SECRET } = process.env;
 
-module.exports = async (req, res, next) => {
+module.exports = (req, res, next) => {
   const token = req.headers['authorization'];
 
   if (!token) {
@@ -12,7 +13,9 @@ module.exports = async (req, res, next) => {
 
   try {
     const decoded = jwt.decode(token, SECRET);
-    const { username, admin } = decoded;
+    const { username, admin, _id } = decoded;
+
+    if (_id !== req.params.id) throw Error('Acesso negado');
 
     req.username = username;
     req.admin = admin;
