@@ -1,6 +1,6 @@
 # Trybe
 
-Este repositório contém todas as atividades de aprendizagem desenvolvidas por _[Lucas Martins da Silva](https://www.linkedin.com/in/lumartins-silva/)_ enquanto estudo na [Trybe](https://www.betrybe.com/) :rocket:
+Este repositório contém todas as atividades de aprendizagem desenvolvidas por mim, _[Lucas Martins da Silva](https://www.linkedin.com/in/lumartins-silva/)_, enquanto estudo na [Trybe](https://www.betrybe.com/) na turma 10 Tribo B :rocket:
 
 _"A Trybe é uma escola do futuro para qualquer pessoa que queira melhorar de vida e construir uma carreira de sucesso em tecnologia, onde a pessoa só paga quando conseguir um bom trabalho."_
 
@@ -201,23 +201,24 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 ##### Bloco 28: Autenticação e Upload de Arquivos
 
-- [ ] 28-1: _NodeJS - JWT - (JSON Web Token)_
-- [ ] 28-2: _NodeJS - Upload de arquivos com `multer`_
-- [ ] 28-3: _NodeJS - Testando APIs com Testes de Integração_
-- [ ] 28-4: _[Projeto - Cookmaster]()_
+- [X] 28-1: _NodeJS - JWT - (JSON Web Token)_
+- [X] 28-2: _NodeJS - Upload de arquivos com `multer`_
+- [X] 28-3: _NodeJS - Testando APIs com Testes de Integração_
+- [X] 28-4: _[Projeto - Cookmaster (Link PR)](https://github.com/tryber/sd-010-b-cookmaster/pull/57)_
 
 ##### Bloco 29: Deployment
 
-- [ ] 29-1: _Infraestrutura - Deploy com Heroku_
-- [ ] 29-2: _Deploy - Gerenciadores de Processos_
-- [ ] 29-3: _[Projeto - Stranger Things]()_
+- [X] 29-1: _Infraestrutura - Deploy com Heroku_
+- [X] 29-2: _Deploy - Gerenciadores de Processos_
+- [X] 29-3: _[Projeto - Stranger Things Backend (Link PR)](https://github.com/tryber/sd-010-b-stranger-things-backend/pull/48)_
+- [X] 29-3: _[Projeto - Stranger Things Frontend (Link PR)](https://github.com/tryber/sd-010-b-stranger-things-frontend/pull/43)_
 
 ##### Bloco 30: Arquitetura: SOLID e ORM
 
-- [ ] 30-1: _Arquitetura - Princípios SOLID_
-- [ ] 30-2: _ORM - Interface da aplicação com o banco de dados_
-- [ ] 30-3: _ORM - Associations_
-- [ ] 30-4: _[Projeto - API de Blogs]()_
+- [X] 30-1: _Arquitetura - Princípios SOLID_
+- [X] 30-2: _ORM - Interface da aplicação com o banco de dados_
+- [X] 30-3: _ORM - Associations_
+- [] 30-4: _[Projeto - API de Blogs]()_
 
 ##### Bloco 31: Sockets
 
