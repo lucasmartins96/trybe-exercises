@@ -7,7 +7,13 @@ const config = require('./config/config');
 const app = express();
 app.use(express.json());
 
-const sequelize = new Sequelize(config.development);
+/*
+  Essa linha será importante para que consigamos isolar nosso teste
+  utilizando a configuração `test` do seu `config.{js | json}`
+*/
+const sequelize = new Sequelize(
+  process.env.NODE_ENV === 'test' ? config.test : config.development
+);
 
 app.get('/employees', async (_req, res) => {
   try {
@@ -65,7 +71,10 @@ app.post('/employees', async (req, res) => {
         { transaction: t }
       );
 
-      return res.status(201).json({ message: 'Cadastrado com sucesso' });
+      return res.status(201).json({
+        id: employee.id, // esse dado será nossa referência para validar a transação
+        message: 'Cadastrado com sucesso',
+      });
     });
 
     // Se chegou até aqui é porque as operações foram concluídas com sucesso,
