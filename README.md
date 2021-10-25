@@ -230,13 +230,13 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] 30-1: _Arquitetura - Princípios SOLID_
 - [x] 30-2: _ORM - Interface da aplicação com o banco de dados_
 - [x] 30-3: _ORM - Associations_
-- [ ] 30-4: _[Projeto - API de Blogs]()_
+- [ ] 30-4: _[Projeto - API de Blogs (Link PR)](https://github.com/tryber/sd-010-b-project-blogs-api/pull/4)_
 
 ##### Bloco 31: Sockets
 
-- [ ] 31-1: _Arquitetura - Camada de View_
-- [ ] 31-2: _Sockets - TCP/UDP & NET_
-- [ ] 31-3: _Sockets - Socket.io_
+- [x] 31-1: _Arquitetura - Camada de View_
+- [x] 31-2: _Sockets - TCP/UDP & NET_
+- [x] 31-3: _Sockets - Socket.io_
 - [ ] 31-4: _Sockets - Praticando Socket.io_
 - [ ] 31-5: _[Projeto - Webchat]()_
 
