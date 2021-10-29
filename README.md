@@ -237,8 +237,8 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] 31-1: _Arquitetura - Camada de View_
 - [x] 31-2: _Sockets - TCP/UDP & NET_
 - [x] 31-3: _Sockets - Socket.io_
-- [ ] 31-4: _Sockets - Praticando Socket.io_
-- [ ] 31-5: _[Projeto - Webchat]()_
+- [x] 31-4: _Sockets - Praticando Socket.io_
+- [x] 31-5: _[Projeto - Webchat (Link PR)](https://github.com/tryber/sd-010-b-project-webchat/pull/14)_
 
 ##### Bloco 32: Projeto - App de Delivery
 
