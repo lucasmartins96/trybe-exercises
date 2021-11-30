@@ -7,6 +7,13 @@
 !.vscode/launch.json
 *.code-workspace
 
+### Python ###
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+
 # End of https://www.toptal.com/developers/gitignore/api/code
 
 exercises/2.2/*
