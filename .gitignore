@@ -12,6 +12,7 @@
 __pycache__/
 *.py[cod]
 *$py.class
+.venv
 
 
 # End of https://www.toptal.com/developers/gitignore/api/code
