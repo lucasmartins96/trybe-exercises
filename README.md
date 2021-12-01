@@ -242,7 +242,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 ##### Bloco 32: Projeto - App de Delivery
 
-- [ ] 32-1: _[Projeto - API de Delivery]()_
+- [x] 32-1: _[Projeto - API de Delivery](https://github.com/tryber/sd-010-b-project-delivery-app/pull/5)_
 
 </details>
 
@@ -263,7 +263,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 ##### Bloco 33: Introdução à Python
 
-- [ ] 33-1: _Aprendendo Python_
+- [x] 33-1: _Aprendendo Python_
 - [ ] 33-2: _Entrada e Saída de dados_
 - [ ] 33-3: _Testes_
 - [ ] 33-4: _[Projeto - Job Insights]()_
