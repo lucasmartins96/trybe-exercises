@@ -150,7 +150,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 </details>
 
 <details>
-  <summary>Desenvolvimento Back-end :hourglass_flowing_sand:</summary>
+  <summary>Desenvolvimento Back-end ✅</summary>
   <!-- ## Desenvolvimento Back-end :hourglass_flowing_sand: -->
 
 ##### Bloco 20: Introdução à SQL
