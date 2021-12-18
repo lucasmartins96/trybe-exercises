@@ -145,7 +145,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 ##### Bloco 19: Projeto App de Receitas
 
-- [x] 19-1: _[Projeto - App de Receitas]()_ <!-- PR: https://github.com/tryber/sd-010-b-project-recipes-app/pull/98 -->
+- [x] 19-1: _[Projeto - App de Receitas](https://github.com/tryber/sd-010-b-project-recipes-app/pull/98)_ <!-- PR: https://github.com/tryber/sd-010-b-project-recipes-app/pull/98 -->
 
 </details>
 
